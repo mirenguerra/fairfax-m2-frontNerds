@@ -4,13 +4,13 @@ $fontFamilyCard: 'Montserrat', sans-serif;
 $fontFamilyCardButton:'Open Sans', sans-serif;
 
 //Font Size
-$fontSizeXS: 12px;
-$fontSizeS:12.8px;
-$fontSizeM:14px;// texto document
-$fontSizeL:16px;
-$fontSizeXL:18px;
-$fontSizeXXL:19.2px;
-$fontSizeXXL:24px;
+$fontSizeXXS: rem(12);
+$fontSizeXS:rem(12.8);
+$fontSizeS:rem(14);
+$fontSizeM:rem(16);// texto document
+$fontSizeL:rem(18);
+$fontSizeXL:rem(19.2);
+$fontSizeXXL:rem(24);
 
 //Font Weight
 $fontWeightXS:400;
@@ -19,4 +19,4 @@ $fontWeightM:700;
 $fontWeightL:900;
 
 //Line Height
-$lineHeight:20px;
+$lineHeight:rem(20);
