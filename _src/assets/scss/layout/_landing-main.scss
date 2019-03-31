@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+.landing__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 320px;
+    padding: 95px 26.4px 30px 25.6px;
+    background-color: $colorBackgroundPrimary;
+}
+
+.landing__hero{
+    width: 250px;
+    padding-bottom: 35.4px;
+}
+
+.landing__title{
+   color: $colorTextTitle;
+   font-family: $fontFamilyTitle;
+   font-size: $fontSizeXL;
+   font-weight: $fontWeightL;
+}
+
+.landing__subtitle{
+   color: $colorTextPrimary;
+   font-family: $fontFamilyCardButton;
+   font-size: $fontSizeXS;
+}
+
+.landing__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 16.8px 0 0 0;
+    border: 1.6px solid $colorTextTitle;
+}
+
+.item__list{
+    
+}
+
+.icon{
+    display: block;
+    width: 32px;
+    margin: 0;
+}
