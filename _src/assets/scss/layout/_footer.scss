@@ -1,0 +1,24 @@
+.footer{
+    display:flex;
+    border-top:1px solid $colorTextCopy;;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0;
+}
+
+.copyright{
+    font-size: $fontSizeS;
+    color:$colorTextCopy;
+}
+
+.logo-adalab__link{
+    width:103px;
+    height: 40px;
+    margin-top:11px;
+}
+
+.logo-adalab{
+    width:103px;
+    height: 40px;
+  
+}
