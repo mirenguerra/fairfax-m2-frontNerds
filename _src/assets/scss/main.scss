@@ -1,4 +1,6 @@
-@import 'components/form-fieldset-title' ;
+// Components
+@import 'components/typography';
+@import 'components/form-fieldset-title';
 
 // Core
 @import 'core/functions';
@@ -8,5 +10,4 @@
 @import 'layout/basis';
 @import 'layout/landing-main';
 
-// Components
-@import 'components/typography';
+
