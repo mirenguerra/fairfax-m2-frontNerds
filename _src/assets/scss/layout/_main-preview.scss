@@ -1,7 +1,49 @@
+.main-preview__container{
+    background: $colorBackgroundGradient;
+    height: 457px;
+    width: 320px;
+    padding: 88px 35px 40px 45px;
+}
+
 .card__container{
+    position: relative;
     background-color: $colorBackgroundPrimary;
     height: 329px;
     width: 240px;
+    margin: 0;
+    padding-top: 23px;
+    text-align: start;
+}
+
+.rectangle{
+    position: absolute;
+    top: 23px;
+    left: 0;
+    height: 42px;
+    width: 5px;
+    background-color: $colorBorderInput;
+}
+
+.card__user-name{
+    font-family: $fontFamilyCard;
+    font-size: $fontSizeL;
+    font-weight: bold;
+    margin: 0 0 4px 20px;
+}
+
+.card__user-position{
+    color: $colorTextSecondary;
+    font-family: $fontFamilyCard;
+    font-size: $fontSizeM;
+    margin: 0 0 10px 20px;
+}
+
+.card__social-media-list{
+    display: flex;
+    flex-direction: flex-start;
+    position: absolute;
+    bottom: 12px;
+    margin-left: 20px;
 }
 
 .card__item-list{
@@ -10,4 +52,8 @@
     border-radius: 50%;
     height: 32px;
     width: 32px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
