@@ -1,12 +1,16 @@
 .main__header {
     display: flex;
-    flex-direction: column;
-    // padding: 31px, 79px, 30px, 40px;
+    flex-direction: column;   
     background-color:$colorTextButton;
 }
-
+.image-container {
+    display: block;
+    background: url(../Awesome-profile-cards.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 31px 79px 30px 40px;
+}
 .header__image {
     height: 50px;
     width: 201px;
-    // padding: 31px, 79px, 30px, 40px;
 }
