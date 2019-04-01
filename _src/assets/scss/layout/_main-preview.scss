@@ -1,16 +1,35 @@
 .main-preview__container{
+    display: flex;
+    flex-direction: column;
     background: $colorBackgroundGradient;
     height: 457px;
     width: 320px;
-    padding: 88px 35px 40px 45px;
+    padding: 38px 35px 40px 45px;
+}
+
+.reset__btn {
+    border-radius: 15px;
+    width: 75px;
+    height: 30px;
+    border: 1px solid $colorBackgroundPrimary;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $fontFamilyCardButton;
+    color: $colorTextSecondary;
+    margin-bottom: 20px;
+}
+
+.reset__icon{
+    margin-right: 10px;
 }
 
 .card__container{
     position: relative;
     background-color: $colorBackgroundPrimary;
+    box-shadow: $colorBoxShadow;
     height: 329px;
     width: 240px;
-    margin: 0;
     padding-top: 23px;
     text-align: start;
 }
