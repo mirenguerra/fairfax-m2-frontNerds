@@ -1,11 +1,12 @@
+// Components
+@import 'components/typography';
 @import 'components/form-fieldset-title' ;
-
 // Core
 @import 'core/functions';
 @import 'core/variables';
 
 // Layout
 @import 'layout/basis';
+@import 'layout/footer';
 
-// Components
-@import 'components/typography';
+
