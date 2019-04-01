@@ -1,0 +1,33 @@
+.fieldset__title__container{
+    display: flex;
+    // border:1px solid black;
+    justify-content: space-between;
+    font-size: 18px;
+    background-color: #fff;
+    align-items: center;
+    margin:0 20px;
+}
+
+.icon-legend__container{
+    display:flex;
+}
+
+.fieldset__title{
+    text-transform: uppercase;
+    color:#54585a;
+    margin:0 10px;
+}
+
+.icon{
+    color:#e17334;
+}
+
+.btn--collapsable{
+    background-color: transparent;
+    border:1px solid transparent;
+}
+
+.arrow{
+    color:#54585a;
+    font-size:18px;
+}

@@ -4,13 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Awesome Profile Cards</title>
+  <title>Awesome Profile Cards</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <partial src="_main-header.html"></partial>
     <main>
     <partial src="_main-preview.html"></partial>
+
+    <!--Order these 3 partials before the form- fieldsets-->
+    <partial title="Design" icon="far fa-object-ungroup icon" src="_form__fieldset__title.html"></partial>
+
+    <partial title="Fill" icon="far fa-keyboard icon" src="_form__fieldset__title.html"></partial>
+    
+    <partial title="Share" icon="fas fa-share-alt icon"> src="_form__fieldset__title.html"></partial>
+    <!---->
+
     <partial src="_main-form.html"></partial>
   </main>
     <partial src="_footer.html"></partial>
