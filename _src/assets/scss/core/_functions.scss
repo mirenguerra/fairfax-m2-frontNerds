@@ -1,5 +1,3 @@
-
 @function rem($pixels) {
-    @return ( $pixels / $fontSizeM * 1rem );
+    @return ( $pixels * 1rem / $defaultFontSize );
 }
-
