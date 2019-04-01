@@ -1,13 +1,10 @@
-.card__header{
+.card__container{
     background-color: $colorBackgroundPrimary;
+    height: 329px;
+    width: 240px;
 }
 
-.card__footer{
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.item__list{
+.card__item-list{
     font-size: $fontSizeL;
     border: 2px solid $colorBorderInput;
     border-radius: 50%;
