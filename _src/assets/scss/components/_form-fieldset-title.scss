@@ -1,11 +1,12 @@
 .fieldset__title__container{
     display: flex;
-    // border:1px solid black;
+    border-top:1px solid $colorBackgroundSecondary;
+    border-bottom:1px solid $colorBackgroundSecondary;
     justify-content: space-between;
-    font-size: 18px;
-    background-color: #fff;
+    font-size: $fontSizeL;
     align-items: center;
     margin:0 20px;
+    padding: 10px 0 7px;
 }
 
 .icon-legend__container{
@@ -14,12 +15,16 @@
 
 .fieldset__title{
     text-transform: uppercase;
-    color:#54585a;
+    color:$colorTextSecondary;
     margin:0 10px;
+    font-family: $fontFamilyCardButton;
+    font-weight: $fontWeightS;
+    font-size: $fontSizeL;
 }
 
-.icon{
-    color:#e17334;
+.icon--fieldset{
+    color:$colorTextTitle;
+    font-size: $fontSizeL;
 }
 
 .btn--collapsable{
@@ -28,6 +33,6 @@
 }
 
 .arrow{
-    color:#54585a;
-    font-size:18px;
+    color:$colorTextSecondary;
+    font-size:$fontSizeL;
 }
