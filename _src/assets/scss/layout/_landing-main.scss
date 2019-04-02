@@ -3,19 +3,39 @@
     min-width: 320px;
     padding: 95px 26.4px 30px 25.6px;
     background-color: $colorBackgroundPrimary;
+
+    @media all and (min-width:768px) {
+        padding: 350px 218px 59px 219px;
+        min-height: 963px;
+    }
 }
 
 .landing__hero{
     width: 250px;
     padding-bottom: 35.4px;
+
+    @media all and (min-width:768px) {
+        min-width: 419px;
+        padding-bottom: 31px;
+    }
 }
 
 .landing__title{
     @include textParameter($colorTextTitle, $fontFamilyTitle, $fontSizeXL, $fontWeightL);
+
+    @media all and (min-width:768px) {
+        font-size: $fontSizeXXL;
+        width: 325px;
+    }
 }
 
 .landing__subtitle{
-    @include textParameter($colorTextPrimary, inherit, $fontSizeXS, none);
+    @include textParameter($colorTextPrimary, inherit, $fontSizeXS, normal);
+
+    @media all and (min-width:768px) {
+        font-size: $fontSizeM;
+        width: 325px;
+    }
 }
 
 .landing__list{
@@ -23,10 +43,20 @@
     @include boxParameter(16.8px 0 0 0, 15px 20px 19.8px 20px);
     width: 268px;
     border: 1.6px solid rgba(225, 115, 52, 0.21);
+
+    @media all and (min-width:768px) {
+        @include boxParameter(25px 0 186px 0, 15px 20px 10px 20px);
+        width: 325px;
+        justify-content: space-between;
+    }
 }
 
 .item__list{
     @include textParameter($colorTextSecondary, inherit, $fontSizeXS, none);
+
+    @media all and (min-width:768px) {
+        font-size: $fontSizeM;
+    }
 }
 
 .icon{
@@ -34,6 +64,10 @@
     margin: 0;
     font-size: $fontSizeXXL;
     color: $colorTextTitle;
+
+    @media all and (min-width:768px) {
+        font-size: $fontSizeXXXL;
+    }
 }
 
 .landing__link{
