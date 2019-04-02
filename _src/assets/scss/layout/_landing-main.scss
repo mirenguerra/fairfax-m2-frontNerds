@@ -1,8 +1,5 @@
 .landing__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, column, center, center);
     min-width: 320px;
     padding: 95px 26.4px 30px 25.6px;
     background-color: $colorBackgroundPrimary;
@@ -14,30 +11,22 @@
 }
 
 .landing__title{
-   color: $colorTextTitle;
-   font-family: $fontFamilyTitle;
-   font-size: $fontSizeXL;
-   font-weight: $fontWeightL;
+    @include textParameter($colorTextTitle, $fontFamilyTitle, $fontSizeXL, $fontWeightL);
 }
 
 .landing__subtitle{
-   color: $colorTextPrimary;
-   font-size: $fontSizeXS;
+    @include textParameter($colorTextPrimary, inherit, $fontSizeXS, none);
 }
 
 .landing__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex(flex, row, space-evenly, none);
+    @include boxParameter(16.8px 0 0 0, 15px 20px 19.8px 20px);
     width: 268px;
-    margin-top: 16.8px;
-    padding: 15px 20px 19.8px 20px;
     border: 1.6px solid rgba(225, 115, 52, 0.21);
 }
 
 .item__list{
-    font-size: $fontSizeXS;
-    color: $colorTextSecondary;
+    @include textParameter($colorTextSecondary, inherit, $fontSizeXS, none);
 }
 
 .icon{
@@ -48,12 +37,10 @@
 }
 
 .landing__link{
-    margin-top: 38.6px;
-    padding: 10px 0 10px 0;
+    @include textParameter($colorTextButton, inherit, inherit, $fontWeightS);
+    @include boxParameter(38.6px 0 0 0, 10px 0 10px 0);
     width: 129px;
     background-color: $colorBackgroundButton;
-    color: $colorTextButton;
     text-transform: uppercase;
-    font-weight: $fontWeightS;
     border-radius: 21px;
 }

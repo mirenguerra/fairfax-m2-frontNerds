@@ -1,6 +1,5 @@
 .main-preview__container{
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column, none, none);
     background: $colorBackgroundGradient;
     height: 457px;
     width: 100%;
@@ -8,15 +7,13 @@
 }
 
 .reset__btn {
+    @include textParameter($colorTextSecondary, $fontFamilyCardButton, $fontSizeXXS, none);
+    border: 1px solid $colorBackgroundPrimary;
     border-radius: 15px;
+    background-color: transparent;
     width: 75px;
     height: 30px;
-    border: 1px solid $colorBackgroundPrimary;
-    background-color: transparent;
     text-transform: uppercase;
-    font-size: 12px;
-    font-family: $fontFamilyCardButton;
-    color: $colorTextSecondary;
     margin-bottom: 20px;
 }
 
@@ -44,35 +41,28 @@
 }
 
 .card__user-name{
-    font-family: $fontFamilyCard;
-    font-size: $fontSizeL;
-    font-weight: bold;
+    @include textParameter(inherit, $fontFamilyCard, $fontSizeL, bold);
     margin: 0 0 4px 20px;
 }
 
 .card__user-position{
-    color: $colorTextSecondary;
-    font-family: $fontFamilyCard;
-    font-size: $fontSizeM;
+    @include textParameter($colorTextSecondary, $fontFamilyCard, $fontSizeM, none);
     margin: 0 0 10px 20px;
 }
 
 .card__social-media-list{
-    display: flex;
-    flex-direction: flex-start;
+    @include flex(flex, flex-start, center, center);
     position: absolute;
     bottom: 12px;
     margin-left: 20px;
 }
 
 .card__item-list{
+    @include flex(flex, none, center, center);
     font-size: $fontSizeL;
     border: 2px solid $colorBorderInput;
     border-radius: 50%;
     height: 32px;
     width: 32px;
     margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
