@@ -1,0 +1,24 @@
+.fillTheGap {
+    font-family: $fontFamilyCardButton;
+    font-size: $fontSizeS;
+    color: $colorTextPrimary;
+    margin: auto 20px;
+}
+
+.fillTheGap-item {
+    text-align: left;
+}
+
+.fillTheGap-label{
+   margin-bottom: 6px;
+}
+
+.fillTheGap-input{
+    border: solid 1px $colorBorderInput;
+    display: block;
+    margin-bottom: 20px;
+    height: 30px;
+    &::placeholder{
+        color: $colorPlaceholderInput; 
+    }
+}
