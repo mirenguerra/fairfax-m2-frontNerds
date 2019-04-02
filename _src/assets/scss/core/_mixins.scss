@@ -16,3 +16,8 @@
     margin: $margin;
     padding: $padding;
 }
+
+@mixin boxSize($width, $height) {
+    width: $width;
+    height: $height;
+}

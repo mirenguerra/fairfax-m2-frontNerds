@@ -1,18 +1,23 @@
 .main-preview__container{
     @include flex(flex, column, none, none);
+    @include boxSize(100%, 457px);
     background: $colorBackgroundGradient;
-    height: 457px;
-    width: 100%;
     padding: 38px 35px 40px 45px;
+
+    @media all and (min-width:768px) {
+        @include boxSize(329px, 812px);
+        justify-self: end;
+        border-radius: 6px;
+        padding: 173px 44px 260px 45px;
+    }
 }
 
 .reset__btn {
     @include textParameter($colorTextSecondary, $fontFamilyCardButton, $fontSizeXXS, none);
+    @include boxSize(75px, 30px);
     border: 1px solid $colorBackgroundPrimary;
     border-radius: 15px;
     background-color: transparent;
-    width: 75px;
-    height: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -22,21 +27,19 @@
 }
 
 .card__container{
+    @include boxSize(240px, 329px);
     position: relative;
     background-color: $colorBackgroundPrimary;
     box-shadow: $colorBoxShadow;
-    height: 329px;
-    width: 240px;
     padding-top: 23px;
     text-align: start;
 }
 
 .rectangle{
+    @include boxSize(5px, 42px);
     position: absolute;
     top: 23px;
     left: 0;
-    height: 42px;
-    width: 5px;
     background-color: $colorBorderInput;
 }
 
@@ -59,10 +62,9 @@
 
 .card__item-list{
     @include flex(flex, none, center, center);
+    @include boxSize(32px, 32px);
     font-size: $fontSizeL;
     border: 2px solid $colorBorderInput;
     border-radius: 50%;
-    height: 32px;
-    width: 32px;
     margin-right: 10px;
 }
