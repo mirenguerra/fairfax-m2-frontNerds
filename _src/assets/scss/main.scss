@@ -1,14 +1,14 @@
 // Core
-@import 'core/functions';
 @import 'core/variables';
+@import 'components/typography';
+@import 'core/functions';
+@import 'layout/basis';
 
 // Components
-@import 'components/typography';
 @import 'components/form-fieldset-title';
 @import 'components/button';
 
 // Layout
-@import 'layout/basis';
 @import 'layout/landing-main';
 
 
