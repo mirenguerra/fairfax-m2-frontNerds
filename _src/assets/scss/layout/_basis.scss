@@ -12,7 +12,7 @@ body {
     color: $colorTextPrimary;
     text-align: center;
     font-family:$fontFamilyCardButton;
-    font-size:$fontSizeM;
+    font-size:$fontSizeS;
     background-color: $colorBackgroundPrimary;  
     font-weight: 400;
 }
@@ -28,6 +28,6 @@ ul {
 button{
     background: none;
     padding: 0;
-    margin: 0;
+    margin:0;
     border: none;
 }

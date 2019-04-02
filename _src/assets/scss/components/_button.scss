@@ -11,3 +11,19 @@
      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
 
+.btn-share{
+    text-transform: uppercase;
+    width: 199px;
+    margin: auto;
+    padding: 13px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    font-size:  16px;
+    font-weight: $fontWeightS;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-btn{
+    font-size: 22px;
+}
