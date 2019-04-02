@@ -5,6 +5,7 @@ $colorBackgroundGradient: linear-gradient(to bottom, #bfcdd0, #dde9ed);
 $colorBoxShadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
 $colorBackgroundButton:#438792;
+$colorBackgroundButtonForm: #e17334;
 $colorTextButton:#fff;
 
 $colorTextTitle: #e17334;
@@ -13,3 +14,21 @@ $colorTextSecondary:#54585a;
 $colorTextCopy: #6b6b6b;
 
 $colorBorderInput:#a2deaf;
+
+//palettes
+//palette blue-green
+$blueGreen1:#114e4e;
+$blueGreen2:#438792;
+$blueGreen3:#a2deaf;
+
+//palette red-orange
+$redOrange1:#420101;
+$redOrange2:#bd1010;
+$redOrange3:#e95626;
+
+//palette blue-gray
+$blueGray1:#3e5b65;
+$blueGray2:#dfe5eb;
+$blueGray3:#a0c0cf;
+
+$colorPlaceholderInput: #c5c5c5;

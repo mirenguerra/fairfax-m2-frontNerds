@@ -1,15 +1,23 @@
 // Core
-@import 'core/functions';
 @import 'core/variables';
+@import 'core/functions';
 @import 'core/mixins';
+@import 'core/typography';
+@import 'layout/basis';
+
 
 // Components
-@import 'components/typography';
-@import 'components/form-fieldset-title';
+@import 'components/form-fieldset-title' ;
+@import 'components/button';
 
 // Layout
-@import 'layout/basis';
+@import 'layout/footer';
 @import 'layout/landing-main';
-@import 'layout/main-preview'
+@import 'layout/header-main';
+@import 'layout/main-preview';
+@import 'layout/form-design';
+@import 'layout/form-fillTheGap';
+
+
 
 
