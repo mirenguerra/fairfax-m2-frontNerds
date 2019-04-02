@@ -1,26 +1,18 @@
+
 .main__header {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;  
+    justify-content: center; 
     background-color:$colorTextButton;
-
-    @media all and (min-width:768px) {
-        flex-direction: row;
-}
-
-}
-.image-container {
-    display: block;
-    background: url(../Awesome-profile-cards.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
     padding: 31px 79px 30px 40px;
     
-    @media all and (min-width:768px) {
-        padding: 31px auto 30px 40px;
+    @media all and (min-width:768px){
+        flex-direction: row;
+        justify-content: flex-start; 
     }
 }
-
 .header__image {
-    height: 50px;
     width: 201px;
+    height: 50px;
 }
+
