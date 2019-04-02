@@ -1,5 +1,6 @@
 // Core
 @import 'core/variables';
+<<<<<<< HEAD
 @import 'components/typography';
 @import 'core/functions';
 @import 'layout/basis';
@@ -15,5 +16,19 @@
 @import 'layout/landing-main';
 @import 'layout/header-main';
 @import 'layout/form-design'
+=======
+@import 'core/typography';
+@import 'core/functions';
+
+@import 'layout/basis';
+
+// Components
+@import 'components/form-fieldset-title';
+@import 'components/button';
+
+// Layout
+@import 'layout/landing-main';
+@import 'layout/form-fillTheGap';
+>>>>>>> fillTheGap-scss
 
 
