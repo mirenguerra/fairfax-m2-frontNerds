@@ -21,8 +21,10 @@
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     font-size:  16px;
     font-weight: $fontWeightS;
+    font-family: $fontFamilyCardButton;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .icon-btn{
