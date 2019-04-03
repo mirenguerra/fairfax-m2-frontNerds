@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Awesome Profile Cards</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    
+    <body>
+        <!-- <header class="main__header"> <a class="header__link" href="index.html">
+            <img class="header__image" src="assets/images/Awesome-profile-cards.svg" alt="Awesome profile-cards logo">
+        </a>
+
+</header> -->
+        <main>
+            <section>
+                <div class="card__container">
+                    <div class="card__header">
+                         <h2 class="card__user-name">User name</h2>
+
+                         <h3 class="card__user-position">User occupation</h3>
+
+                    </div>
+                    <div class="card__picture">
+                        <img src="../../assets/images/a-109-240x200.jpg" alt="User image">
+                    </div>
+                    <div class="card__footer">
+                        <ul>
+                            <li class="item__list"> <i class="fas fa-mobile-alt" title="Mobile icon"></i>
+
+                            </li>
+                            <li class="item__list"> <i class="far fa-envelope" title="Email icon"></i>
+
+                            </li>
+                            <li class="item__list"> <i class="fab fa-linkedin-in" title="Linkedin icon"></i>
+
+                            </li>
+                            <li class="item__list"> <i class="fab fa-github-alt" title="Github icon"></i>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <form action="" method="post">
+                <fieldset class="fieldset-item">
+                    <section class="fieldset__title__container">
+                        <div class="icon-legend__container"> <i class="far fa-object-ungroup icon"></i>
+
+                            <legend class="fieldset__title">Design</legend>
+                        </div>
+                        <button class="btn--collapsable"><i class="fas fa-chevron-down arrow"></i> 
+                        </button>
+                    </section>
+                    <section class="design">
+                        <p class="section__title">Colors</p>
+                        <div class="options__container">
+                            <div class="option__container">
+                                <label for="palette--blue-green"></label>
+                                <input id="palette--blue-green" type="radio" value="palette-bluee-green"
+                                name="colors" />
+                                <div class="palette__container">
+                                    <div class="sample-color blue-green--1"></div>
+                                    <div class="sample-color blue-green--2"></div>
+                                    <div class="sample-color blue-green--3"></div>
+                                </div>
+                            </div>
+                            <div class="option__container">
+                                <label for="palette--red-orange"></label>
+                                <input id="palette--red-orange" type="radio" value="palette--red-orange"
+                                name="colors" />
+                                <div class="palette__container">
+                                    <div class="sample-color red-orange--1"></div>
+                                    <div class="sample-color red-orange--2"></div>
+                                    <div class="sample-color red-orange--3"></div>
+                                </div>
+                            </div>
+                            <div class="option__container">
+                                <label for="palette--blue-gray"></label>
+                                <input id="palette--blue-gray" type="radio" value="palette--blue-gray"
+                                name="colors" />
+                                <div class="palette__container">
+                                    <div class="sample-color blue-gray--1"></div>
+                                    <div class="sample-color blue-gray--2"></div>
+                                    <div class="sample-color blue-gray--3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset class="fieldset-item">
+                    <section class="fieldset__title__container">
+                        <div class="icon-legend__container"> <i class="far fa-keyboard icon"></i>
+
+                            <legend class="fieldset__title">Fill the gap</legend>
+                        </div>
+                        <button class="btn--collapsable"><i class="fas fa-chevron-down arrow"></i> 
+                        </button>
+                    </section>
+                    <section class="fillTheGap">
+                        <div class="fillTheGap-item">
+                            <label class="fillTheGap-label" for="name">Full name</label>
+                            <input class="fillTheGap-input" type="text" id="name"
+                            name="name" placeholder="Ej: Sally Hill" required />
+                        </div>
+                        <div class="fillTheGap-item">
+                            <label class="fillTheGap-label" for="job">Job</label>
+                            <input class="fillTheGap-input" type="text" id="job" name="job"
+                            placeholder="Ej: Front-end unicorn" required />
+                        </div>
+                        <div class="fillTheGap-item profilePicture-align">
+                            <label class="fillTheGap-label" for="profilePicture">Profile picture</label>
+                            <!-- El siguiente <a> es un botón. Hay que enlazar -->
+                            <button class=" btn btn-profilePicture" src="#">Add picture</button>
+                            <!-- El siguiente input es para la previsualización
+                            de la imagen en miniatura. Aún hay que enlazar -->
+                            <input class="fillTheGap-input profile-miniature" src="aquí enlazamos con preview"
+                            name="profilePicture" />
+                        </div>
+                        <div class="fillTheGap-item">
+                            <label class="fillTheGap-label" for="email">Email</label>
+                            <input class="fillTheGap-input" type="email" id="email" name="email"
+                            placeholder="Ej: sallyhill@gmail.com" required />
+                        </div>
+                        <div class="fillTheGap-item">
+                            <label class="fillTheGap-label" for="phone">Phone number</label>
+                            <input class="fillTheGap-input" type="tel" id="phone"
+                            name="phone" placeholder="Ej: 555-55-55-55" required />
+                        </div>
+                        <div class="fillTheGap-item">
+                            <label class="fillTheGap-label" for="linkedin">Linkedin</label>
+                            <input class="fillTheGap-input" type="text" id="linkedin"
+                            name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" required />
+                        </div>
+                        <div class="fillTheGap-item">
+                            <label class="fillTheGap-label" for="gitHub">GitHub</label>
+                            <input class="fillTheGap-input" type="text" id="gitHub"
+                            name="gitHub" placeholder="Ej: @sally-hill" required />
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset class="fieldset-item">
+                    <section class="fieldset__title__container">
+                        <div class="icon-legend__container"> <i class="fas fa-share-alt icon"></i>
+
+                            <legend class="fieldset__title">Share</legend>
+                        </div>
+                        <button class="btn--collapsable"><i class="fas fa-chevron-down arrow"></i> 
+                        </button>
+                    </section>
+                    <button class="btn btn-share"><i class="far fa-address-card"></i> Crear tarjeta</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer"> <small class="copyright">Awesome profile-cards @2018</small>
+ <a href="https://adalab.es/"
+            target=_blank class="logo-adalab__link">
+       
+        <img class= "logo-adalab" src="assets/images/logo-adalab.png" alt="Adalab">
+    </a>
+
+        </footer>
+    </body>
+
+</html>

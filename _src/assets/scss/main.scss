@@ -1,7 +1,8 @@
 // Core
 @import 'core/variables';
-@import 'core/typography';
 @import 'core/functions';
+@import 'core/mixins';
+@import 'core/typography';
 @import 'layout/basis';
 
 
@@ -13,6 +14,7 @@
 @import 'layout/footer';
 @import 'layout/landing-main';
 @import 'layout/header-main';
+@import 'layout/main-preview';
 @import 'layout/form-design';
 @import 'layout/form-fillTheGap';
 
