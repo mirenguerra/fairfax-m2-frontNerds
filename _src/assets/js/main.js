@@ -1,10 +1,8 @@
 'use strict';
 
-console.log('>> Ready :)');
-
 const inputEmailEl = document.querySelector('#email');
-const linkEmailEl = document.querySelector('.email').href;
-console.log(linkEmailEl);
+let linkEmailEl = document.querySelector('.email').href;
+
 
 function handlerEmail(event){
     const inputValue = inputEmailEl.value;
@@ -13,4 +11,4 @@ function handlerEmail(event){
 }
 
 
-inputEmailEl.addEventListener('keyup', handlerEmail );
+inputEmailEl.addEventListener('keyup', handlerEmail);
