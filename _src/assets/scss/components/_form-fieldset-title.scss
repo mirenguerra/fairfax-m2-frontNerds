@@ -3,7 +3,7 @@
     // border:1px solid black;
     justify-content: space-between;
     font-size: 18px;
-    background-color: #fff;
+    background-color: $colorBackgroundPrimary;
     align-items: center;
     margin:0 20px;
 }
@@ -14,6 +14,9 @@
 
 .fieldset__title{
     text-transform: uppercase;
+    font-family: $fontFamilyCardButton;
+    font-size:$fontSizeL;
+    font-weight: $fontWeightS;
     color:#54585a;
     margin:0 10px;
 }
