@@ -1,6 +1,7 @@
 .landing__container{
     @include flex(flex, column, center, center);
     min-width: 320px;
+    height: 100%;
     padding: 95px 26.4px 30px 25.6px;
     background-color: $colorBackgroundPrimary;
 }

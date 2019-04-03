@@ -1,13 +1,12 @@
 .main-preview__container{
-    @include flex(flex, column, unset, unset);
     @include boxSize(100%, 457px);
+    @include gridContainer(grid, 1fr, 1fr 1fr 1fr 1fr, 'resetBtn' 'userInfo' 'picture' 'socialMedia');
     position: relative;
     background: $colorBackgroundGradient;
     padding: 38px 35px 40px 45px;
-
+    
     @media all and (min-width:768px) {
-        @include boxSize(329px, 812px);
-        justify-self: end;
+        @include boxSize(100%, 812px);
         border-radius: 6px;
         padding: 173px 44px 260px 45px;
     }
@@ -16,6 +15,7 @@
 .reset__btn {
     @include textParameter($colorTextSecondary, $fontFamilyCardButton, $fontSizeXXS, none);
     @include boxSize(75px, 30px);
+    grid-area: resetBtn;
     border: 1px solid $colorBackgroundPrimary;
     border-radius: 15px;
     background-color: transparent;
@@ -28,33 +28,44 @@
 }
 
 .card__container{
-    @include flex(inherit, column, none, none);
-    @include boxSize(240px, 329px);
-    @include relativeCentered();
-    background-color: $colorBackgroundPrimary;
+    @include boxSize(240px, auto);
     box-shadow: $colorBoxShadow;
-    padding-top: 23px;
+    background-color: $colorBackgroundPrimary;
     text-align: start;
 }
 
 .card-user__container{
     @include boxSize(240px, 42px);
-    border-left: 5px solid $colorBorderInput;
-    margin-bottom: 10px;
-    
-    .card-user__name{
-        @include textParameter(inherit, $fontFamilyCard, $fontSizeL, bold);
-        margin: 0 0 4px 20px;
+    grid-area: userInfo;
+    padding-top: 23px;
+    height: 75px;
+
+    .card-user{
+        border-left: 5px solid $colorBorderInput;
+        box-shadow: none;
+
+        .card-user__name{
+            @include textParameter(inherit, $fontFamilyCard, $fontSizeL, bold);
+            margin: 0 0 4px 15px;
+        }
+        
+        .card-user__position{
+            @include textParameter($colorTextSecondary, $fontFamilyCard, $fontSizeM, normal);
+            margin: 0 0 10px 15px;
+        }
     }
-    
-    .card-user__position{
-        @include textParameter($colorTextSecondary, $fontFamilyCard, $fontSizeM, none);
-        margin: 0 0 10px 20px;
-    }
+}
+
+.card__picture{
+    @include boxSize(240px, 200px);
+    display: inline-flex;
+    grid-area: picture;
+    box-shadow: $colorBoxShadow;
 }
 
 .card__social-media-list{
     @include flex(flex, flex-start, center, center);
+    grid-area: socialMedia;
     position: absolute;
     bottom: 12px;
     margin-left: 20px;

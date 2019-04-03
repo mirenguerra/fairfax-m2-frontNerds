@@ -22,10 +22,10 @@
     height: $height;
 }
 
-@mixin relativeCentered() {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+@mixin gridContainer($display, $gridTempCol, $gridTempRw, $gridTempAr) {
+    display: $display;
+    grid-template-columns: $gridTempCol;
+    grid-template-rows: $gridTempRw;
+    grid-template-areas: $gridTempAr;
 }
 
