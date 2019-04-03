@@ -1,7 +1,7 @@
 .fillTheGap {
     font-family: $fontFamilyCardButton;
     font-size: $fontSizeS;
-    color: $colorTextPrimary;
+    color: $colorGreenBottle;
     margin: 25px 20px 30px;
 }
 
@@ -15,13 +15,13 @@
 }
 
 .fillTheGap-input{
-    border: solid 1px $colorBorderInput;
+    border: solid 1px $colorLimePastel;
     display: block;
     margin-bottom: 20px;
     height: 30px;
     width: 100%;
     &::placeholder{
-        color: $colorPlaceholderInput; 
+        color: $colorgGraySilver; 
     }
 }
 

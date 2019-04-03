@@ -2,7 +2,7 @@
     @include boxSize(100%, 457px);
     @include gridContainer(grid, 1fr, 1fr 1fr 1fr 1fr, 'resetBtn' 'userInfo' 'picture' 'socialMedia');
     position: relative;
-    background: $colorBackgroundGradient;
+    background: $colorFromGrayToGhostwhite;
     padding: 38px 35px 40px 45px;
     
     @media all and (min-width:768px) {
@@ -13,10 +13,10 @@
 }
 
 .reset__btn {
-    @include textParameter($colorTextSecondary, $fontFamilyCardButton, $fontSizeXXS, none);
+    @include textParameter($colorGraySlate, $fontFamilyCardButton, $fontSizeXXS, none);
     @include boxSize(75px, 30px);
     grid-area: resetBtn;
-    border: 1px solid $colorBackgroundPrimary;
+    border: 1px solid $colorBeige;
     border-radius: 15px;
     background-color: transparent;
     text-transform: uppercase;
@@ -29,8 +29,12 @@
 
 .card__container{
     @include boxSize(240px, auto);
+    @include flex(inherit, column, none, none);
+    @include boxSize(240px, 329px);
+    @include relativeCentered();
+    background-color: $colorBeige;
     box-shadow: $colorBoxShadow;
-    background-color: $colorBackgroundPrimary;
+    background-color: $colorBeige;
     text-align: start;
 }
 
@@ -41,7 +45,7 @@
     height: 75px;
 
     .card-user{
-        border-left: 5px solid $colorBorderInput;
+        border-left: 5px solid $colorLimePastel;
         box-shadow: none;
 
         .card-user__name{
@@ -50,7 +54,7 @@
         }
         
         .card-user__position{
-            @include textParameter($colorTextSecondary, $fontFamilyCard, $fontSizeM, normal);
+            @include textParameter($colorGreySlate, $fontFamilyCard, $fontSizeM, normal);
             margin: 0 0 10px 15px;
         }
     }
@@ -75,7 +79,7 @@
     @include flex(flex, none, center, center);
     @include boxSize(32px, 32px);
     font-size: $fontSizeL;
-    border: 2px solid $colorBorderInput;
+    border: 2px solid $colorLimePastel;
     border-radius: 50%;
     margin-right: 10px;
 }
