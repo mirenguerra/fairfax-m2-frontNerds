@@ -31,7 +31,7 @@
     @include boxSize(240px, auto);
     @include flex(inherit, column, none, none);
     @include boxSize(240px, 329px);
-    @include relativeCentered();
+    // @include relativeCentered();
     background-color: $colorBeige;
     box-shadow: $colorBoxShadow;
     background-color: $colorBeige;
@@ -54,7 +54,7 @@
         }
         
         .card-user__position{
-            @include textParameter($colorGreySlate, $fontFamilyCard, $fontSizeM, normal);
+            @include textParameter($colorGraySlate, $fontFamilyCard, $fontSizeM, normal);
             margin: 0 0 10px 15px;
         }
     }
