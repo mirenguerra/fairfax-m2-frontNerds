@@ -1,10 +1,10 @@
 .footer{
     display:flex;
-    border-top:1px solid $colorBackgroundSecondary;
+    border-top:1px solid $colorGreyStone;
     flex-direction: column;
     align-items: center;
     padding:20px 0;
-    background-color: $colorTextButton;
+    background-color: $colorSimplyWhite;
     @media all and (min-width:768px) {
         flex-direction: row;
         justify-content: space-between;
@@ -14,7 +14,7 @@
 
 .copyright{
     font-size: $fontSizeS;
-    color:$colorTextCopy;
+    color:$colorGreyAsphalt;
     opacity:0.5;
 }
 
