@@ -27,3 +27,18 @@ function getUserJob(){
 }
 
 setJob.addEventListener('keyup', getUserJob);
+
+// GITHUB
+const setGitHub = document.querySelector('#gitHub');
+const cardUserGitHub = document.querySelector('#gitHub-link')
+const iconStyle = document.querySelector('#gitHubEl')
+
+function getGitHub(){
+    const userGitHub = setGitHub.value;
+    cardUserGitHub.href =`https://github.com/${userGitHub}`;
+    if (userGitHub !== ''){
+        iconStyle.classList.add('card__item-list-default');
+    }
+}
+
+setGitHub.addEventListener('keyup', getGitHub);
