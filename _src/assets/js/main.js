@@ -84,25 +84,33 @@ function handleInputKeyup(event) {
 //PALETES COLORS
 
 const inputRed = document.getElementById('palette--red-orange');
-const userName = document.querySelector('.card__container');////borde del container
+//const userName = document.querySelector('.card__container');////borde del container
+const userName = document.querySelector('.card-user');
+const contactList = document.querySelector('.card-sm__container');////borde del container
 const inputGrey = document.getElementById('palette--blue-gray');
 const inputGreen = document.getElementById ('palette--blue-green');
 
 function changePaletteRed(){
   userName.classList.remove('gray-palette','green-palette');
   userName.classList.add('red-palette');
+  contactList.classList.remove('gray-palette','green-palette');
+  contactList.classList.add('red-palette');
 
 }
 
 function  changePaletteGray(){
   userName.classList.remove('green-palette','red-palette');
   userName.classList.add('gray-palette');
+  contactList.classList.remove('green-palette','red-palette');
+  contactList.classList.add('gray-palette');
 
 }
 
 function changePaletteGreen(){
   userName.classList.remove('gray-palette','red-palette');
   userName.classList.add('green-palette');
+  contactList.classList.remove('gray-palette','red-palette');
+  contactList.classList.add('green-palette');
 
 }
 
