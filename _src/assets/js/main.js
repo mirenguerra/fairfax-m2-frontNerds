@@ -1,5 +1,6 @@
 'use strict';
 
+// NAME INPUT
 const setName = document.querySelector('#name');
 const cardUserName = document.querySelector('.card-user__name');
 
@@ -13,21 +14,7 @@ function getUserName(){
 
 setName.addEventListener('keyup', getUserName);
 
-// USING CURRENT
-// const setName = document.querySelector('#name');
-// const cardUserName = document.querySelector('.card-user__name');
-
-// function inputCard(event){
-//     const current = event.currentTarget;
-
-//     const inputValue = current.value;
-//     cardUserName.innerHTML = inputValue;
-//     if(inputValue ===''){
-//         cardUserName.innerHTML = 'User name';
-//     }
-// }
-// setName.addEventListener('keyup', inputCard);
-
+// JOB INPUT
 const setJob = document.querySelector('#job');
 const cardUserJob = document.querySelector('.card-user__position');
 
@@ -40,15 +27,3 @@ function getUserJob(){
 }
 
 setJob.addEventListener('keyup', getUserJob);
-
-// GITHUB
-const setGitHub = document.querySelector('#gitHub');
-const cardUserGitHub = 
-
-function getGitHub(){
-    const userGitHub = setGitHub.value;
-    
-}
-
-
-setGitHub.addEventListener('keyup', getGitHub);
