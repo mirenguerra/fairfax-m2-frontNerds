@@ -91,24 +91,24 @@ const inputGrey = document.getElementById('palette--blue-gray');
 const inputGreen = document.getElementById ('palette--blue-green');
 
 function changePaletteRed(){
-  userName.classList.remove('gray-palette','green-palette');
-  userName.classList.add('red-palette');
+  userName.classList.remove('gray-palette','green-palette','borderLeftGreen','borderLeftGray');
+  userName.classList.add('red-palette', 'borderLeftRed');
   contactList.classList.remove('gray-palette','green-palette');
   contactList.classList.add('red-palette');
 
 }
 
 function  changePaletteGray(){
-  userName.classList.remove('green-palette','red-palette');
-  userName.classList.add('gray-palette');
+  userName.classList.remove('green-palette','red-palette','borderLeftGreen','borderLeftRed');
+  userName.classList.add('gray-palette','borderLeftGray');
   contactList.classList.remove('green-palette','red-palette');
   contactList.classList.add('gray-palette');
 
 }
 
 function changePaletteGreen(){
-  userName.classList.remove('gray-palette','red-palette');
-  userName.classList.add('green-palette');
+  userName.classList.remove('gray-palette','red-palette','borderLeftGray','borderLeftRed');
+  userName.classList.add('green-palette', 'borderLeftGreen');
   contactList.classList.remove('gray-palette','red-palette');
   contactList.classList.add('green-palette');
 

@@ -32,20 +32,31 @@
 
 .red-palette {
     color:#420101;
-    .card-user{
-        border-left:5px solid #e95626; 
-    }
+    // .card-user{
+    //     border-left:5px solid #e95626; 
+    // }
     .card__item-list {
         border-color: #e95626;
 
     }
     
 }
+
+.borderLeftRed{
+    border-left:5px solid #e95626; 
+}
+.borderLeftGreen{
+    border-left:5px solid #a2deaf;  
+}
+.borderLeftGray{
+    border-left:5px solid #a0c0cf;  
+}
+
 .gray-palette {
     color:#3e5b65;
-    .card-user{
-        border-left:5px solid #a0c0cf; 
-    }
+    // .card-user{
+    //     border-left:5px solid #a0c0cf; 
+    // }
     .card__item-list {
         border-color:#a0c0cf;
             
@@ -54,9 +65,9 @@
 
 .green-palette {
     color:#114e4e;
-    .card-user{
-        border-left:5px solid #a2deaf; 
-    }
+    // .card-user{
+    //     border-left:5px solid #a2deaf; 
+    // }
     .card__item-list {
         border-color: #a2deaf;
         
@@ -79,7 +90,7 @@
     height: 75px;
 
     .card-user{
-        border-left: 5px solid $colorLimePastel;
+        //border-left: 5px solid $colorLimePastel;
         box-shadow: none;
 
         .card-user__name{
