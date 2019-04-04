@@ -30,7 +30,7 @@
 .card__container{
     @include flex(inherit, column, none, none);
     @include boxSize(240px, 329px);
-    @include relativeCentered();
+    // @include relativeCentered();
     background-color: $colorBackgroundPrimary;
     box-shadow: $colorBoxShadow;
     padding-top: 23px;
