@@ -42,6 +42,16 @@ function handlerEmail(event){
 
 inputEmailEl.addEventListener('keyup', handlerEmail);
 
+//PHONE
+
+const inputTel = document.getElementById('phone');
+const linkTel = document.getElementById('phone-link');
+function changeLinkTel(){
+    linkTel.setAttribute('href','tel: +34'+ inputTel.value);
+}
+
+inputTel.addEventListener('keyup',changeLinkTel);
+
 // GITHUB
 const setGitHub = document.querySelector('#gitHub');
 const cardUserGitHub = document.querySelector('#gitHub-link')
@@ -70,4 +80,5 @@ function handleInputKeyup(event) {
     linkLnkdIn.href = inputValueLnkdIn;
         
 }
+
 

@@ -1,10 +1,13 @@
 .fieldset__title__container{
     display: flex;
+    border-top:1px solid $colorGreyStone;
+    border-bottom:1px solid $colorGreyStone;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: $fontSizeL;
     background-color: $colorBeige;
     align-items: center;
     margin:0 20px;
+    padding: 10px 0 7px;
 }
 
 .icon-legend__container{
@@ -18,10 +21,14 @@
     font-weight: $fontWeightS;
     color:#54585a;
     margin:0 10px;
+    font-family: $fontFamilyCardButton;
+    font-weight: $fontWeightS;
+    font-size: $fontSizeL;
 }
 
-.icon{
+.icon--fieldset{
     color:#e17334;
+    font-size: $fontSizeL;
 }
 
 .btn--collapsable{
@@ -30,6 +37,6 @@
 }
 
 .arrow{
-    color:#54585a;
-    font-size:18px;
+    color:$colorGraySlate;
+    font-size:$fontSizeL;
 }
