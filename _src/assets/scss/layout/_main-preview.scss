@@ -6,7 +6,7 @@
     padding: 38px 35px 40px 45px;
     
     @media all and (min-width:768px) {
-        @include boxParameter(0 0 0 30px, 173px 44px 260px 45px)
+        @include boxParameter(0 0 0 30px, 173px 44px 260px 45px);
         max-width: 329px;
         min-height: 812px;
         border-radius: 6px;
