@@ -1,3 +1,54 @@
 'use strict';
 
-console.log('>> Ready :)');
+const setName = document.querySelector('#name');
+const cardUserName = document.querySelector('.card-user__name');
+
+function getUserName(){
+    const userName = setName.value;
+    cardUserName.innerHTML = userName;  
+    if (userName ===''){
+        cardUserName.innerHTML = 'User name';
+    }
+}
+
+setName.addEventListener('keyup', getUserName);
+
+// USING CURRENT
+// const setName = document.querySelector('#name');
+// const cardUserName = document.querySelector('.card-user__name');
+
+// function inputCard(event){
+//     const current = event.currentTarget;
+
+//     const inputValue = current.value;
+//     cardUserName.innerHTML = inputValue;
+//     if(inputValue ===''){
+//         cardUserName.innerHTML = 'User name';
+//     }
+// }
+// setName.addEventListener('keyup', inputCard);
+
+const setJob = document.querySelector('#job');
+const cardUserJob = document.querySelector('.card-user__position');
+
+function getUserJob(){
+    const userJob = setJob.value;
+    cardUserJob.innerHTML = userJob;
+    if (userJob ===''){
+        cardUserJob.innerHTML = 'User job';
+    }
+}
+
+setJob.addEventListener('keyup', getUserJob);
+
+// GITHUB
+const setGitHub = document.querySelector('#gitHub');
+const cardUserGitHub = 
+
+function getGitHub(){
+    const userGitHub = setGitHub.value;
+    
+}
+
+
+setGitHub.addEventListener('keyup', getGitHub);
