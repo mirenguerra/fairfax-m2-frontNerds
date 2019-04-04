@@ -67,5 +67,5 @@ function getGitHub(){
 
 setGitHub.addEventListener('keyup', getGitHub);
 
-
+// COLLAPSABLE SECTIONS
 
