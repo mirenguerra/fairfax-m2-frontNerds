@@ -1,24 +1,29 @@
 *, *::after, *::before {
-    margin: 0;
-    padding: 0;
+    @include boxParameter(0, 0);
     box-sizing: border-box;
 }
 
 body {
-    //structure and position
-    margin: 0;
-    padding: 0;
-    //cosmetics
-    color: $colorTextPrimary;
+    @include flex(flex, column, unset, unset);
+    @include boxParameter(0, 0);
+    @include textParameter($colorGreenBottle, $fontFamilyCardButton, $fontSizeS, $fontWeightXS);
+    height: 100%;
     text-align: center;
-    font-family:$fontFamilyCardButton;
-    font-size:$fontSizeS;
-    background-color: $colorBackgroundPrimary;  
-    font-weight: 400;
+    background-color: $colorBeige;  
+}
+
+main{
+    background-color: $colorBeige;
+    
+    @media all and (min-width:768px) {
+        @include flex(flex, row-reverse, unset, unset);
+        padding: 20px 40px 20px 40px;
+    }
 }
 
 a {
     text-decoration: none; 
+    color:inherit;
 }
 
 ul {
@@ -26,8 +31,11 @@ ul {
 }
 
 button{
+    @include boxParameter(0, 0);
     background: none;
-    padding: 0;
-    margin:0;
+    border: none;
+}
+
+.fieldset-item{
     border: none;
 }

@@ -3,7 +3,7 @@
     min-width: 320px;
     height: 100%;
     padding: 95px 26.4px 30px 25.6px;
-    background-color: $colorBackgroundPrimary;
+    background-color: $colorBeige;
 }
 
 .landing__hero{
@@ -12,11 +12,15 @@
 }
 
 .landing__title{
-    @include textParameter($colorTextTitle, $fontFamilyTitle, $fontSizeXL, $fontWeightL);
+    @include textParameter($colorOrangeCitrus, $fontFamilyTitle, $fontSizeXL, $fontWeightL);
 }
 
 .landing__subtitle{
-    @include textParameter($colorTextPrimary, inherit, $fontSizeXS, none);
+    @include textParameter($colorGreenBottle, inherit, $fontSizeXS, none);
+
+    @media all and (min-width:768px) {
+        max-width: 331px;
+    }
 }
 
 .landing__list{
@@ -27,21 +31,21 @@
 }
 
 .item__list{
-    @include textParameter($colorTextSecondary, inherit, $fontSizeXS, none);
+    @include textParameter($colorGraySlate, inherit, $fontSizeXS, none);
 }
 
 .icon{
     display: block;
     margin: 0;
     font-size: $fontSizeXXL;
-    color: $colorTextTitle;
+    color: $colorOrangeCitrus;
 }
 
 .landing__link{
-    @include textParameter($colorTextButton, inherit, inherit, $fontWeightS);
+    @include textParameter($colorSimplyWhite, inherit, inherit, $fontWeightS);
     @include boxParameter(38.6px 0 0 0, 10px 0 10px 0);
     width: 129px;
-    background-color: $colorBackgroundButton;
+    background-color: $colorGreenyBlue;
     text-transform: uppercase;
     border-radius: 21px;
 }

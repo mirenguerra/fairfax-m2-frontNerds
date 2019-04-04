@@ -1,9 +1,10 @@
 .fieldset__title__container{
     display: flex;
-    border-top:1px solid $colorBackgroundSecondary;
-    border-bottom:1px solid $colorBackgroundSecondary;
+    border-top:1px solid $colorGreyStone;
+    border-bottom:1px solid $colorGreyStone;
     justify-content: space-between;
     font-size: $fontSizeL;
+    background-color: $colorBeige;
     align-items: center;
     margin:0 20px;
     padding: 10px 0 7px;
@@ -15,7 +16,10 @@
 
 .fieldset__title{
     text-transform: uppercase;
-    color:$colorTextSecondary;
+    font-family: $fontFamilyCardButton;
+    font-size:$fontSizeL;
+    font-weight: $fontWeightS;
+    color:#54585a;
     margin:0 10px;
     font-family: $fontFamilyCardButton;
     font-weight: $fontWeightS;
@@ -23,7 +27,7 @@
 }
 
 .icon--fieldset{
-    color:$colorTextTitle;
+    color:#e17334;
     font-size: $fontSizeL;
 }
 
@@ -33,6 +37,6 @@
 }
 
 .arrow{
-    color:$colorTextSecondary;
+    color:$colorGraySlate;
     font-size:$fontSizeL;
 }
