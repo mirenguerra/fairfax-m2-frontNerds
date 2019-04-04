@@ -1,4 +1,5 @@
 'use strict';
+
 // NAME INPUT
 const setName = document.querySelector('#name');
 const cardUserName = document.querySelector('.card-user__name');
