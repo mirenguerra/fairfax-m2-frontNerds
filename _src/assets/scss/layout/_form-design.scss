@@ -17,32 +17,32 @@
   
 }
 .blue-green--1{
-    background-color: $blueGreen1;
+    background-color: $colorGreenBottle;
 }
 .blue-green--2{
-    background-color: $blueGreen2;
+    background-color: $colorGreenyBlue;
 }
 .blue-green--3{
-    background-color: $blueGreen3;
+    background-color: $colorLimePastel;
 }
 
 .red-orange--1{
-    background-color: $redOrange1;
+    background-color: $colorRedDriedBlood;
 }
 .red-orange--2{
-    background-color: $redOrange2;
+    background-color: $colorRedValentine;
 }
 .red-orange--3{
-    background-color: $redOrange3;
+    background-color: $colorOrangeBlood;
 }
 .blue-gray--1{
-    background-color: $blueGray1;
+    background-color: $colorGraySwamp;
 }
 .blue-gray--2{
-    background-color: $blueGray2;
+    background-color: $colorGrayFog;
 }
 .blue-gray--3{
-    background-color: $blueGray3;
+    background-color: $colorSmokeBlue;
 }
 .design{
     display:flex;
@@ -53,5 +53,5 @@
 .section__title{
     text-transform: uppercase;
     font-size:$fontSizeS;
-    color:$colorTextSecondary; 
+    color:$colorGraySlate; 
 }
