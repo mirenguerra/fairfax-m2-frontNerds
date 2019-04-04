@@ -28,6 +28,20 @@ function getUserJob(){
 
 setJob.addEventListener('keyup', getUserJob);
 
+//Email
+const inputEmailEl = document.querySelector('#email');
+let linkEmailEl = document.querySelector('.email');
+
+
+function handlerEmail(event){
+    const inputValue = inputEmailEl.value;
+    linkEmailEl.href = `mailto:${inputValue}`;
+    console.log(linkEmailEl);
+}
+
+
+inputEmailEl.addEventListener('keyup', handlerEmail);
+
 // GITHUB
 const setGitHub = document.querySelector('#gitHub');
 const cardUserGitHub = document.querySelector('#gitHub-link')
@@ -42,3 +56,5 @@ function getGitHub(){
 }
 
 setGitHub.addEventListener('keyup', getGitHub);
+
+
