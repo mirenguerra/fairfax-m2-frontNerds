@@ -1,12 +1,12 @@
 'use strict';
 
 const inputEmailEl = document.querySelector('#email');
-let linkEmailEl = document.querySelector('.email').href;
+let linkEmailEl = document.querySelector('.email');
 
 
 function handlerEmail(event){
     const inputValue = inputEmailEl.value;
-    linkEmailEl = inputValue;
+    linkEmailEl.href = `mailto:${inputValue}`;
     console.log(linkEmailEl);
 }
 
