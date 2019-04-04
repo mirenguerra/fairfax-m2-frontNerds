@@ -69,3 +69,5 @@ setGitHub.addEventListener('keyup', getGitHub);
 
 // COLLAPSABLE SECTIONS
 
+const arrowDesign = document.querySelector('#arrow-design');
+const sectionDesign = document.querySelector('');
