@@ -34,9 +34,16 @@
 .btn--collapsable{
     background-color: transparent;
     border:1px solid transparent;
+  
 }
 
 .arrow{
     color:$colorGraySlate;
     font-size:$fontSizeL;
 }
+
+
+.hidden{
+    display: none;
+}
+
