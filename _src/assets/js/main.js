@@ -52,6 +52,20 @@ function changeLinkTel(){
 
 inputTel.addEventListener('keyup',changeLinkTel);
 
+// USER LINKEDIN
+
+const inputLnkdIn = document.querySelector('#linkedin');
+const linkLnkdIn = document.querySelector('.card__link-linkedin');
+
+inputLnkdIn.addEventListener('keyup', handleInputKeyup);
+
+function handleInputKeyup(event) {
+    const linkedinInput = inputLnkdIn;
+    const inputValueLnkdIn = linkedinInput.value;
+    linkLnkdIn.href = inputValueLnkdIn;
+        
+}
+
 // GITHUB
 const setGitHub = document.querySelector('#gitHub');
 const cardUserGitHub = document.querySelector('#gitHub-link')
@@ -67,18 +81,6 @@ function getGitHub(){
 
 setGitHub.addEventListener('keyup', getGitHub);
 
-// USER LINKEDIN
 
-const inputLnkdIn = document.querySelector('#linkedin');
-const linkLnkdIn = document.querySelector('.card__link-linkedin');
-
-inputLnkdIn.addEventListener('keyup', handleInputKeyup);
-
-function handleInputKeyup(event) {
-    const linkedinInput = inputLnkdIn;
-    const inputValueLnkdIn = linkedinInput.value;
-    linkLnkdIn.href = inputValueLnkdIn;
-        
-}
 
 
