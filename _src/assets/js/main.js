@@ -92,6 +92,17 @@ function hideDesignSection() {
     sectionDesign.classList.toggle('hidden');
     arrowIconDesign.classList.toggle('fa-chevron-up');
     arrowIconDesign.classList.toggle('fa-chevron-down');
+    if (!sectionFill.classList.contains('hidden')) {
+        sectionFill.classList.add('hidden');
+        arrowIconFill.classList.toggle('fa-chevron-up');
+        arrowIconFill.classList.toggle('fa-chevron-down');
+    }
+    else if (!sectionShare.classList.contains('hidden')) {
+        sectionShare.classList.add('hidden');
+        arrowIconShare.classList.toggle('fa-chevron-up');
+        arrowIconShare.classList.toggle('fa-chevron-down');
+
+    }
 }
 
 {/* <i class="fas fa-chevron-up"></i> */ }
@@ -109,12 +120,18 @@ function hideFillSection() {
     sectionFill.classList.toggle('hidden');
     arrowIconFill.classList.toggle('fa-chevron-up');
     arrowIconFill.classList.toggle('fa-chevron-down');
-   if(!sectionDesign.classList.contains('hidden')){
-       sectionDesign.classList.add('hidden');
-       arrowIconDesign.classList.toggle('fa-chevron-up');
-       arrowIconDesign.classList.toggle('fa-chevron-down');
-   }
-   
+    if (!sectionDesign.classList.contains('hidden')) {
+        sectionDesign.classList.add('hidden');
+        arrowIconDesign.classList.toggle('fa-chevron-up');
+        arrowIconDesign.classList.toggle('fa-chevron-down');
+    }
+    else if (!sectionShare.classList.contains('hidden')) {
+        sectionShare.classList.add('hidden');
+        arrowIconShare.classList.toggle('fa-chevron-up');
+        arrowIconShare.classList.toggle('fa-chevron-down');
+
+    }
+
 }
 
 arrowButtonFill.addEventListener('click', hideFillSection);
@@ -130,10 +147,15 @@ function hideShareSection() {
     sectionShare.classList.toggle('hidden');
     arrowIconShare.classList.toggle('fa-chevron-up');
     arrowIconShare.classList.toggle('fa-chevron-down');
-    if(!sectionDesign.classList.contains('hidden')){
+    if (!sectionDesign.classList.contains('hidden')) {
         sectionDesign.classList.add('hidden');
         arrowIconDesign.classList.toggle('fa-chevron-up');
         arrowIconDesign.classList.toggle('fa-chevron-down');
+    }
+    else if (!sectionFill.classList.contains('hidden')) {
+        sectionFill.classList.add('hidden');
+        arrowIconFill.classList.toggle('fa-chevron-up');
+        arrowIconFill.classList.toggle('fa-chevron-down');
     }
 }
 arrowButtonShare.addEventListener('click', hideShareSection);
