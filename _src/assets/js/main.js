@@ -88,7 +88,7 @@ const arrowIconDesign = document.querySelector('#arrow-design');
 const sectionDesign = document.querySelector('#section-design');
 const arrowButtonDesign = document.querySelector('#ButtonDesign');
 function hideDesignSection() {
-    sectionDesign.classList.toggle('design');
+    // sectionDesign.classList.toggle('design');
     sectionDesign.classList.toggle('hidden');
     arrowIconDesign.classList.toggle('fa-chevron-up');
     arrowIconDesign.classList.toggle('fa-chevron-down');
@@ -109,6 +109,12 @@ function hideFillSection() {
     sectionFill.classList.toggle('hidden');
     arrowIconFill.classList.toggle('fa-chevron-up');
     arrowIconFill.classList.toggle('fa-chevron-down');
+   if(!sectionDesign.classList.contains('hidden')){
+       sectionDesign.classList.add('hidden');
+       arrowIconDesign.classList.toggle('fa-chevron-up');
+       arrowIconDesign.classList.toggle('fa-chevron-down');
+   }
+   
 }
 
 arrowButtonFill.addEventListener('click', hideFillSection);
@@ -124,6 +130,11 @@ function hideShareSection() {
     sectionShare.classList.toggle('hidden');
     arrowIconShare.classList.toggle('fa-chevron-up');
     arrowIconShare.classList.toggle('fa-chevron-down');
+    if(!sectionDesign.classList.contains('hidden')){
+        sectionDesign.classList.add('hidden');
+        arrowIconDesign.classList.toggle('fa-chevron-up');
+        arrowIconDesign.classList.toggle('fa-chevron-down');
+    }
 }
 arrowButtonShare.addEventListener('click', hideShareSection);
 
