@@ -75,7 +75,6 @@ const arrowIconDesign = document.querySelector('#arrow-design');
 const sectionDesign = document.querySelector('#section-design');
 const arrowButtonDesign =document.querySelector('#ButtonDesign');
 function hideDesignSection(){
-    sectionDesign.classList.toggle('design');
     sectionDesign.classList.toggle('hidden');
     arrowIconDesign.classList.toggle('fa-chevron-up');
     arrowIconDesign.classList.toggle('fa-chevron-down');
