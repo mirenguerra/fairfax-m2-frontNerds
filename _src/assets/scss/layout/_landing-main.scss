@@ -17,7 +17,7 @@
 
 .landing__subtitle{
     @include textParameter($colorGreenBottle, inherit, $fontSizeXS, none);
-
+    max-width: 268px;
     @media all and (min-width:768px) {
         max-width: 331px;
     }
