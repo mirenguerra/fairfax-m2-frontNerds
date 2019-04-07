@@ -222,10 +222,10 @@ linkedinInput.addEventListener('keyup', linkedinCircle);
 //GITHUB
 
 function githubCircle(){
-  const githubFill =document.getElementById('githubEl');
+  const githubFill = document.getElementById('gitHubEl');
   const githubInputContent = document.getElementById('gitHub');
 
-  if(githubInputContent.value ===''){
+  if(githubInputContent.value === ''){
     githubFill.classList.add('card__item-list-no-border');
     githubFill.classList.remove('card__item-list');
   }else {
@@ -234,5 +234,5 @@ function githubCircle(){
   }
 }
 
-const githubInput =document.getElementById ('gitHub');
+const githubInput = document.getElementById('gitHub');
 githubInput.addEventListener('keyup', githubCircle);
