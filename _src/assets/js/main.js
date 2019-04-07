@@ -191,6 +191,7 @@ function changePaletteGreen() {
     contactList.classList.add('green-palette');
 }
 
+
 inputRed.addEventListener('click', changePaletteRed);
 inputGrey.addEventListener('click', changePaletteGray);
 inputGreen.addEventListener('click', changePaletteGreen);
