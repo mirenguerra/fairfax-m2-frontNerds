@@ -14,10 +14,13 @@ body {
 
 main{
     background-color: $colorBeige;
+    margin: auto;
     
     @media all and (min-width:768px) {
         @include flex(flex, row-reverse, unset, unset);
         padding: 20px 40px 20px 40px;
+        margin: auto;
+        max-width: 100%;
     }
 }
 
