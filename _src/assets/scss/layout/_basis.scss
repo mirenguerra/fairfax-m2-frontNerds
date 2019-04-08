@@ -7,7 +7,7 @@ body {
     @include flex(flex, column, unset, unset);
     @include boxParameter(0, 0);
     @include textParameter($colorGreenBottle, $fontFamilyCardButton, $fontSizeS, $fontWeightXS);
-    height: 100%;
+    max-height: 100vh;
     text-align: center;
     background-color: $colorBeige;  
 }
