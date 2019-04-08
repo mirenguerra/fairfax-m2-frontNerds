@@ -33,7 +33,7 @@ const inputEmailEl = document.querySelector('#email');
 let linkEmailEl = document.querySelector('.email');
 
 
-function handlerEmail(event) {
+function handlerEmail() {
   const inputValue = inputEmailEl.value;
   linkEmailEl.href = `mailto:${inputValue}`;
   //   console.log(linkEmailEl);
@@ -73,7 +73,7 @@ const linkLnkdIn = document.querySelector('.card__link-linkedin');
 
 inputLnkdIn.addEventListener('keyup', handleInputKeyup);
 
-function handleInputKeyup(event) {
+function handleInputKeyup() {
   const linkedinInput = inputLnkdIn;
   const inputValueLnkdIn = linkedinInput.value;
   linkLnkdIn.href = inputValueLnkdIn;
@@ -165,7 +165,7 @@ inputGreen.addEventListener('click', changePaletteGreen);
 
 //FUNCTIONS CIRCLES ON-OFF
 
-//EMAIL
+//EMAIL CIRCLE
 
 function emailCircle(){
   const mailFill = document.getElementById('email-li');//mainpreview
@@ -183,7 +183,7 @@ function emailCircle(){
 const mailInput = document.getElementById('email');
 mailInput.addEventListener('keyup',emailCircle);
 
-//PHONE
+//PHONE CIRCLE
 
 function phoneCircle(){
   const phoneFill = document.getElementById('phone-li');
@@ -201,7 +201,7 @@ function phoneCircle(){
 const phoneInput = document.getElementById('phone');
 phoneInput.addEventListener('keyup', phoneCircle);
 
-//LINKEDIN
+//LINKEDIN CIRCLE
 
 function linkedinCircle(){
   const linkedinFill = document.getElementById('linkedin-li');
@@ -219,7 +219,7 @@ function linkedinCircle(){
 const linkedinInput = document.getElementById('linkedin');
 linkedinInput.addEventListener('keyup', linkedinCircle);
 
-//GITHUB
+//GITHUB CIRCLE
 
 function githubCircle(){
   const githubFill = document.getElementById('gitHubEl');
