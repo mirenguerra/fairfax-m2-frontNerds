@@ -14,10 +14,13 @@ body {
 
 main{
     background-color: $colorBeige;
+    margin: auto;
     
     @media all and (min-width:768px) {
         @include flex(flex, row-reverse, unset, unset);
         padding: 20px 40px 20px 40px;
+        margin: auto;
+        max-width: 100%;
     }
 }
 
@@ -38,4 +41,11 @@ button{
 
 .fieldset-item{
     border: none;
+    @media all and (min-width:768px){
+        min-width: 321px;
+    }
+    @media all and (min-width:1024px){
+    min-width: 399px;
+    margin-right: 10px;
+    }
 }

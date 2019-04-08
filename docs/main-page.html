@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Awesome Profile Cards</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:900|Montserrat:400,700|Open+Sans:400,600"
+        rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
@@ -13,52 +15,55 @@
     </head>
     
     <body>
-        <!-- <header class="main__header"> <a class="header__link" href="index.html">
+        <header class="main__header"> <a class="header__link" href="index.html">
             <img class="header__image" src="assets/images/Awesome-profile-cards.svg" alt="Awesome profile-cards logo">
         </a>
 
-</header> -->
+        </header>
         <main>
-            <section>
-                <div class="card__container">
-                    <div class="card__header">
-                         <h2 class="card__user-name">User name</h2>
+            <section class="main-preview__container">
+                <button class="reset__btn"><i class="far fa-trash-alt reset__icon"></i>Reset</button>
+                <div class="card-user__container card__container">
+                    <div class="card-user card__container borderLeftGreen">
+                         <h2 class="card-user__name">User name</h2>
 
-                         <h3 class="card__user-position">User occupation</h3>
+                         <h3 class="card-user__position">User job</h3>
 
                     </div>
-                    <div class="card__picture">
-                        <img src="../../assets/images/a-109-240x200.jpg" alt="User image">
-                    </div>
-                    <div class="card__footer">
-                        <ul>
-                            <li class="item__list"> <i class="fas fa-mobile-alt" title="Mobile icon"></i>
+                </div>
+                <div class="card__picture">
+                    <img src="../../assets/images/a-109-240x200.jpg" alt="User image">
+                </div>
+                <div class="card-sm__container card__container">
+                    <ul class="card__social-media-list">
+                        <li id="phone-li" class="card__item-list-no-border"> <a id="phone-link" href="#">
+                <i class="fas fa-mobile-alt" title="Mobile icon"></i></a>
 
-                            </li>
-                            <li class="item__list"> <i class="far fa-envelope" title="Email icon"></i>
+                        </li>
+                        <li id="email-li" class="card__item-list-no-border"> <a class="email" href=""><i class="far fa-envelope" title="Email icon"></i></a>
 
-                            </li>
-                            <li class="item__list"> <i class="fab fa-linkedin-in" title="Linkedin icon"></i>
+                        </li>
+                        <li id="linkedin-li" class="card__item-list-no-border"> <a class="card__link-linkedin" href="" target="_blank"><i class="fab fa-linkedin-in" title="Linkedin icon"></i></a>
 
-                            </li>
-                            <li class="item__list"> <i class="fab fa-github-alt" title="Github icon"></i>
+                        </li>
+                        <li id="gitHubEl" class="card__item-list-no-border"> <a class="card__link" id="gitHub-link" href=""><i class="fab fa-github-alt" title="Github icon"></i></a>
 
-                            </li>
-                        </ul>
-                    </div>
+                        </li>
+                    </ul>
+                </div>
                 </div>
             </section>
             <form action="" method="post">
                 <fieldset class="fieldset-item">
                     <section class="fieldset__title__container">
-                        <div class="icon-legend__container"> <i class="far fa-object-ungroup icon"></i>
+                        <div class="icon-legend__container"> <i class="far fa-object-ungroup icon icon--fieldset"></i>
 
                             <legend class="fieldset__title">Design</legend>
                         </div>
-                        <button class="btn--collapsable"><i class="fas fa-chevron-down arrow"></i> 
+                        <button class="btn--collapsable" id=ButtonDesign><i id=arrow-design class="fas fa-chevron-up arrow"></i> 
                         </button>
                     </section>
-                    <section class="design">
+                    <section id="section-design" class="design">
                         <p class="section__title">Colors</p>
                         <div class="options__container">
                             <div class="option__container">
@@ -96,14 +101,14 @@
                 </fieldset>
                 <fieldset class="fieldset-item">
                     <section class="fieldset__title__container">
-                        <div class="icon-legend__container"> <i class="far fa-keyboard icon"></i>
+                        <div class="icon-legend__container"> <i class="far fa-keyboard icon icon--fieldset"></i>
 
-                            <legend class="fieldset__title">Fill the gap</legend>
+                            <legend class="fieldset__title">Fill</legend>
                         </div>
-                        <button class="btn--collapsable"><i class="fas fa-chevron-down arrow"></i> 
+                        <button class="btn--collapsable" id=ButtonFill><i id=arrow-fillTheGap class="fas fa-chevron-down arrow"></i> 
                         </button>
                     </section>
-                    <section class="fillTheGap">
+                    <section class="fillTheGap hidden">
                         <div class="fillTheGap-item">
                             <label class="fillTheGap-label" for="name">Full name</label>
                             <input class="fillTheGap-input" type="text" id="name"
@@ -147,14 +152,16 @@
                 </fieldset>
                 <fieldset class="fieldset-item">
                     <section class="fieldset__title__container">
-                        <div class="icon-legend__container"> <i class="fas fa-share-alt icon"></i>
+                        <div class="icon-legend__container"> <i class="fas fa-share-alt icon icon--fieldset"></i>
 
                             <legend class="fieldset__title">Share</legend>
                         </div>
-                        <button class="btn--collapsable"><i class="fas fa-chevron-down arrow"></i> 
+                        <button class="btn--collapsable" id=ButtonShare><i id=arrow-share class="fas fa-chevron-down arrow"></i> 
                         </button>
                     </section>
-                    <button class="btn btn-share"><i class="far fa-address-card"></i> Crear tarjeta</button>
+                    <section id="section-share" class="hidden">
+                        <button class="btn btn-share"><i class="far fa-address-card icon-btn"></i> Crear tarjeta</button>
+                    </section>
                 </fieldset>
             </form>
         </main>
@@ -166,6 +173,7 @@
     </a>
 
         </footer>
+        <script type="text/javascript" src="assets/js/main.js"></script>
     </body>
 
 </html>
