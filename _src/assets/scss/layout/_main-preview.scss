@@ -11,6 +11,12 @@
         min-height: 812px;
         border-radius: 6px;
     }
+    @media all and (min-width:1024px) {
+        @include boxParameter(0 0 0 0px, 173px 140px 260px 180px);
+        max-width: 585px;
+        min-height: 812px;
+        border-radius: 6px;
+        }
 }
 
 .reset__btn {
