@@ -7,7 +7,7 @@
     background-color: $colorSimplyWhite;
     @media all and (min-width:768px) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         padding:10px 40px;
     }
 }
@@ -25,6 +25,12 @@
     @media all and (min-width:768px){
         margin-top:0px;
     }
+}
+
+.logo-frontNerds{
+    width:103px;
+    height: 40px;
+  
 }
 
 .logo-frontNerds{
