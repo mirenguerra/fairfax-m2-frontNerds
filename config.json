@@ -18,7 +18,8 @@
 	"js": {
 		"src": [
       "_src/assets/js/main.js",
-      "_src/assets/js/photo-profile.js"
+      "_src/assets/js/photo-profile.js",
+      "_src/assets/js/get-avatar.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

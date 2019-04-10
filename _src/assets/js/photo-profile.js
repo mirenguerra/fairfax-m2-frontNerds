@@ -5,8 +5,11 @@
 
 // Recoger input Type:file
 // Recoger botón profile-picture
+const buttonProfileEl = document.querySelector('.btn-profilePicture');
 // Recoger photo del preview (añadir clase)
+const userPhotoEl = document.querySelector('.userImage');
 // Recoger input Profile-miniature
+const miniaturePhotoEl = document.querySelector('.profile.miniature');
 
 // Escuchamos el click del botón Add Picture
 // Ponemos handler al click del botón Add Picture
