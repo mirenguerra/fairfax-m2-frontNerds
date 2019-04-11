@@ -40,7 +40,7 @@ function resetRRSSCircles(){
 
 // Crear función que ponga el select en la posición default (el primer select)
 function resetSelect(){
-    
+    selectEl.checked = true;
 }
 
 
@@ -50,10 +50,10 @@ buttonResetEl.addEventListener('click', handleButtonResetClick);
 // Poner un handler al click del botón reset
     // Cada value de cada elemento debe ser igual a ''
 function handleButtonResetClick(){
-    
     resetInputs();
     resetCard();
     resetRRSSCircles();
+    resetSelect();
 }
 
 
