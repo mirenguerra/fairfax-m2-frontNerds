@@ -39,6 +39,9 @@ function resetRRSSCircles(){
 }
 
 // Crear función que ponga el select en la posición default (el primer select)
+function resetSelect(){
+    
+}
 
 
 // Escuchar el click del botón reset
