@@ -17,11 +17,11 @@
 	},
 	"js": {
 		"src": [
-      "_src/assets/js/main.js"
-      "_src/assets/js/fill_form.js"
-      "_src/assets/js/design_palette.js" 
-      "_src/assets/js/design_circles.js" 
-      "_src/assets/js/share.js"
+      "_src/assets/js/main.js",
+      "_src/assets/js/fill_form.js",
+      "_src/assets/js/design_palette.js", 
+      "_src/assets/js/design_circles.js",
+      "_src/assets/js/share.js",
       "_src/assets/js/collapsible_form.js" 
       
 		],

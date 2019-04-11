@@ -1,4 +1,4 @@
-'use strict';
+
 //CHANGE COLOR PALETTE
 //PALETTES COLORS
 const userName = document.querySelector('.card-user');

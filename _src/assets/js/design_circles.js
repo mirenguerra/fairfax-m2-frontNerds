@@ -1,4 +1,4 @@
-'use strict';
+
 
 //FUNCTIONS CIRCLES ON-OFF
 
