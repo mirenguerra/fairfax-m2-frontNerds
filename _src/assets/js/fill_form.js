@@ -85,6 +85,5 @@ function handleInputKeyup() {
   const inputValueLnkdIn = linkedinInput.value;
   userInfo.linkedin = inputValueLnkdIn;
   linkLnkdIn.href = inputValueLnkdIn;
-  console.log(userInfo);
 
 }
