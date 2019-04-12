@@ -24,7 +24,7 @@
       "_src/assets/js/share.js",
       "_src/assets/js/collapsible_form.js",
       "_src/assets/js/photo-profile.js",
-      "_src/assets/js/get-avatar.js",
+      "_src/assets/js/get-avatar.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
