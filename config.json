@@ -22,8 +22,9 @@
       "_src/assets/js/design_palette.js", 
       "_src/assets/js/design_circles.js",
       "_src/assets/js/share.js",
-      "_src/assets/js/collapsible_form.js" 
-      
+      "_src/assets/js/collapsible_form.js",
+      "_src/assets/js/photo-profile.js",
+      "_src/assets/js/get-avatar.js",
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
