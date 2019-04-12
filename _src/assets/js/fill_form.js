@@ -5,11 +5,13 @@ const setName = document.querySelector('#name');
 const cardUserName = document.querySelector('.card-user__name');
 
 function getUserName() {
-    const userName = setName.value;
-    cardUserName.innerHTML = userName;
-    if (userName === '') {
-        cardUserName.innerHTML = 'User name';
-    }
+  const userName = setName.value;
+  userInfo.name = userName;//llamo al nombre del objeto y a su elemento para sustituirlo en el object
+  cardUserName.innerHTML = userName;
+  if (userName === '') {
+    cardUserName.innerHTML = 'User name';
+  }
+  
 }
 
 setName.addEventListener('keyup', getUserName);
@@ -19,11 +21,12 @@ const setJob = document.querySelector('#job');
 const cardUserJob = document.querySelector('.card-user__position');
 
 function getUserJob() {
-    const userJob = setJob.value;
-    cardUserJob.innerHTML = userJob;
-    if (userJob === '') {
-        cardUserJob.innerHTML = 'User job';
-    }
+  const userJob = setJob.value;
+  userInfo.job = userJob;
+  cardUserJob.innerHTML = userJob;
+  if (userJob === '') {
+    cardUserJob.innerHTML = 'User job';
+  }
 }
 
 setJob.addEventListener('keyup', getUserJob);
@@ -35,8 +38,10 @@ let linkEmailEl = document.querySelector('.email');
 
 function handlerEmail() {
   const inputValue = inputEmailEl.value;
+  userInfo.email = inputValue;
   linkEmailEl.href = `mailto:${inputValue}`;
   //   console.log(linkEmailEl);
+  
 }
 
 inputEmailEl.addEventListener('keyup', handlerEmail);
@@ -58,10 +63,12 @@ const iconStyle = document.querySelector('#gitHubEl');
 
 function getGitHub() {
   const userGitHub = setGitHub.value;
+  userInfo.github = userGitHub;
   cardUserGitHub.href = `https://github.com/${userGitHub}`;
   if (userGitHub !== '') {
     iconStyle.classList.add('card__item-list-default');
   }
+  
 }
 
 setGitHub.addEventListener('keyup', getGitHub);
@@ -76,5 +83,8 @@ inputLnkdIn.addEventListener('keyup', handleInputKeyup);
 function handleInputKeyup() {
   const linkedinInput = inputLnkdIn;
   const inputValueLnkdIn = linkedinInput.value;
+  userInfo.linkedin = inputValueLnkdIn;
   linkLnkdIn.href = inputValueLnkdIn;
+  console.log(userInfo);
+
 }
