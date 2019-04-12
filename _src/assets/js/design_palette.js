@@ -8,7 +8,8 @@ const inputGreen = document.getElementById('palette--blue-green');
 const contactList = document.querySelector('.card-sm__container');
 
 
-function changePaletteRed() {
+function changePaletteRed(){
+  userInfo.palette = 2;
   userName.classList.remove('gray-palette', 'green-palette', 'borderLeftGreen', 'borderLeftGray');
   userName.classList.add('red-palette', 'borderLeftRed');
   contactList.classList.remove('gray-palette', 'green-palette');
@@ -16,6 +17,7 @@ function changePaletteRed() {
 }
 
 function changePaletteGray() {
+  userInfo.palette = 3;
   userName.classList.remove('green-palette', 'red-palette', 'borderLeftGreen', 'borderLeftRed');
   userName.classList.add('gray-palette', 'borderLeftGray');
   contactList.classList.remove('green-palette', 'red-palette');
@@ -23,6 +25,7 @@ function changePaletteGray() {
 }
 
 function changePaletteGreen() {
+  userInfo.palette = 1;
   userName.classList.remove('gray-palette', 'red-palette', 'borderLeftGray', 'borderLeftRed');
   userName.classList.add('green-palette', 'borderLeftGreen');
   contactList.classList.remove('gray-palette', 'red-palette');

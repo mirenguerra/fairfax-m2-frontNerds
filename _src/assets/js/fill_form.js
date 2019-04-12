@@ -51,7 +51,9 @@ inputEmailEl.addEventListener('keyup', handlerEmail);
 const inputTel = document.getElementById('phone');
 const linkTel = document.getElementById('phone-link');
 function changeLinkTel() {
-  linkTel.setAttribute('href', 'tel: +34' + inputTel.value);
+linkTel.setAttribute('href', 'tel: +34' + inputTel.value);
+const telValue = inputTel.value;
+userInfo.phone = telValue;
 }
 
 inputTel.addEventListener('keyup', changeLinkTel);
