@@ -43,6 +43,11 @@ function resetSelect(){
     selectEl.checked = true;
 }
 
+// Crear función para borrar miniatura y foto de preview
+function resetPhotos(){
+    miniatureEl.classList.remove('js__profile-preview');
+    photoPreviewEl.classList.remove('js__profile-image');
+}
 
 // Escuchar el click del botón reset
 buttonResetEl.addEventListener('click', handleButtonResetClick);
@@ -54,6 +59,7 @@ function handleButtonResetClick(){
     resetCard();
     resetRRSSCircles();
     resetSelect();
+    resetPhotos();
 }
 
 
