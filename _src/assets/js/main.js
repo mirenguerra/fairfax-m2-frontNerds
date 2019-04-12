@@ -287,7 +287,9 @@ function keepInfo(){
 }
 
 function handlerButtonResetClick(){
+  //first the handlerButtonResetClick and then we have to hide the pop-up removing alert-delete
 
+  containerAlertEl.classList.remove('alert-delete');
 }
 resertEl.addEventListener('click', alertReset);
 buttonResetYEl.addEventListener('click', handlerButtonResetClick);
