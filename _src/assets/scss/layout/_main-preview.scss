@@ -111,6 +111,8 @@
     display: inline-flex;
     grid-area: picture;
     box-shadow: $colorBoxShadow;
+    background-size: cover;
+    background-position: center;
 }
 
 .card__social-media-list{
