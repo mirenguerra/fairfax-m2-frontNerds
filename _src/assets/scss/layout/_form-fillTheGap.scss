@@ -28,6 +28,12 @@
 .profile-miniature{
     width: 30px;
     height: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.input-file{
+    display:none;
 }
 
 .profilePicture-align{
