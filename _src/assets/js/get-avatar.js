@@ -1,4 +1,5 @@
-console.log('hola');
+
+
 const fr = new FileReader();
 const uploadBtn = document.querySelector('.js__profile-trigger');
 const fileField = document.querySelector('.js__profile-upload-btn');
@@ -30,6 +31,8 @@ function writeImage() {
    * el resultado
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
+  userInfo.photo =  `url(${fr.result})`;
+  saveDataLs();
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
 
