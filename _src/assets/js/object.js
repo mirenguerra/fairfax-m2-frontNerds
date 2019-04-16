@@ -5,9 +5,11 @@ function saveDataLs(){
 };
 // Funcion que comprueba si hay datos en localStoragey con ellos hacer una autorrellenado
 function printDatafromLS(){
-    const userInfofromLS = localStorage.getItem('userInfo');    
-    userInfo = JSON.parse(userInfofromLS);
-    setName.value = userInfo.name;
+    const userInfofromLS = localStorage.getItem('userInfo');
+    if (userInfofromLS) {
+        userInfo = JSON.parse(userInfofromLS);
+        setName.value = userInfo.name;
+    }    
 }
 
 printDatafromLS(); 
