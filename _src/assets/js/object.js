@@ -1,16 +1,4 @@
 
-
-let userInfo = {
-  'palette': 1, //porque es el valor por defecto
-  'name': '',
-  'job': '',
-  'phone': '',
-  'email': '',
-  'linkedin': '',
-  'github': '',
-  'photo': '',
-};
-
 //Funcion que guarda datos del objeto en localStorage
 function saveDataLs(){
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
@@ -19,7 +7,7 @@ function saveDataLs(){
 function printDatafromLS(){
     const userInfofromLS = localStorage.getItem('userInfo');    
     userInfo = JSON.parse(userInfofromLS);
-    console.log(userInfo);  
+    setName.value = userInfo.name;
 }
 
 printDatafromLS(); 
