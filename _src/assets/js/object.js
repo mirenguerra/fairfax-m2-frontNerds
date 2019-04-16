@@ -6,7 +6,7 @@ const userInfo = {
     'email': '',
     'linkedin': '',
     'github': '',
-    'photo': '',
+    // 'photo': '',
 }
 
 
