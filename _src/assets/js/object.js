@@ -6,7 +6,7 @@ const userInfo = {
     'email': '',
     'linkedin': '',
     'github': '',
-    // 'photo': '',
+    'photo': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXwAAADzCAIAAAF9EwqyAAAACXBIW…VkmU4WWWQxo8gynSyyyGJGkWU6WWSRxYwiy3SyyCKLGcX/D1hBYgDkVxjtAAAAAElFTkSuQmCC',
 }
 
 
