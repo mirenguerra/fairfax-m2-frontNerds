@@ -16,9 +16,13 @@ function sendRequest(userInfo) {
 
 function showURL(result) {
     const responseURL = document.querySelector('.response');
-
+    const twitterBtnEl = document.querySelector('.btn-twitter');
+    
     if (result.success) {
         responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
+         twitterBtnEl.innerHTML = twitterBtnEl.innerHTML + '<a href="https://twitter.com/intent/tweet?text=Hello%20world%20' + result.cardURL + '</a>';
+        console.log(result.cardURL,'ghgh', twitterBtnEl.innerHTML );
+        
     } else {
         responseURL.innerHTML = 'ERROR:' + result.error;
     }
