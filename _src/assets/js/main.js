@@ -9,4 +9,5 @@ let userInfo = {
     'linkedin': '',
     'github': '',
     'photo': '',
+    'miniature': '',
   };

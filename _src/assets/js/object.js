@@ -8,8 +8,24 @@ function printDatafromLS(){
     const userInfofromLS = localStorage.getItem('userInfo');
     if (userInfofromLS) {
         userInfo = JSON.parse(userInfofromLS);
-        setName.value = userInfo.name;
+        fillFormfromOBject();
+        fillCardfromObject();
     }    
 }
+function fillFormfromOBject(){
+    setName.value = userInfo.name;
+    setJob.value = userInfo.job;
+    inputEmailEl.value = userInfo.email;
+    inputTel.value = userInfo.phone;
+    inputTel.value = userInfo.github;
+    linkedinInput.value = userInfo.linkedin;
+    profileImage.style.backgroundImage = userInfo.photo;
+    profilePreview.style.backgroundImage = userInfo.miniature;
+}
+
+function fillCardfromObject(){
+
+}
+
 
 printDatafromLS(); 

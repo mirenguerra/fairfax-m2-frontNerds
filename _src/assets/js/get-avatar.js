@@ -31,9 +31,11 @@ function writeImage() {
    * el resultado
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
-  userInfo.photo =  `url(${fr.result})`;
+  userInfo.photo = `url(${fr.result})`;
   saveDataLs();
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  userInfo.miniature = `url(${fr.result})`;
+  saveDataLs();
 }
 
 
