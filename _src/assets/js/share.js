@@ -1,9 +1,8 @@
 const twitterBtnEl = document.querySelector('btn-twitter');
-const shareBtnEl = document.querySelector('btn-share');
+const buttonShareEL = document.querySelector('.btn-share');
 
-// function handleButtonClick(){
-//     twitterBtnEl.classList.toggle('hide__btn-twitter');
-    
-// }
+function handlerButtonShare(){
+    sendRequest(userInfo);
+}
 
-// shareBtnEl.addEventListener('click', handleButtonClick;
+buttonShareEL.addEventListener('click', handlerButtonShare);
