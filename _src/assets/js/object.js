@@ -17,7 +17,7 @@ function fillFormfromOBject(){
     setJob.value = userInfo.job;
     inputEmailEl.value = userInfo.email;
     inputTel.value = userInfo.phone;
-    inputTel.value = userInfo.github;
+    setGitHub.value = userInfo.github;
     linkedinInput.value = userInfo.linkedin;
     profileImage.style.backgroundImage = userInfo.photo;
     profilePreview.style.backgroundImage = userInfo.miniature;
