@@ -49,6 +49,10 @@ function resetPhotos(){
     photoPreviewEl.classList.remove('js__profile-image');
 }
 
+function resetCache(){
+    localStorage.removeItem('userInfo');
+}
+
 // Escuchar el click del botón reset
 buttonResetEl.addEventListener('click', handleButtonResetClick);
 
@@ -60,6 +64,7 @@ function handleButtonResetClick(){
     resetRRSSCircles();
     resetSelect();
     resetPhotos();
+    resetCache();
 }
 
 
