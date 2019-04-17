@@ -26,13 +26,42 @@ function fillCardfromObject(){
     cardUserName.innerHTML = userInfo.name;
     cardUserJob.innerHTML = userInfo.job;
     profileImage.style.backgroundImage = userInfo.photo;
-    const emailCard = document.getElementById('email-li')
+    fillEmail();
+    fillPhone();
+    fillLinkedin();
+    fillGitHub();
+}
+
+function fillEmail(){
+    const emailCard = document.getElementById('email-li');
     if (inputEmailEl.value) {
         emailCard.classList.remove('card__item-list-no-border');
         emailCard.classList.add('card__item-list');
     }
-
 }
 
+function fillPhone(){
+    const phoneCard = document.getElementById('phone-li');
+    if (inputTel.value) {
+        phoneCard.classList.remove('card__item-list-no-border');
+        phoneCard.classList.add('card__item-list');
+    }
+}
+
+function fillLinkedin(){
+    const linkedinCard = document.getElementById('linkedin-li');
+    if (linkedinInput.value) {
+        linkedinCard.classList.remove('card__item-list-no-border');
+        linkedinCard.classList.add('card__item-list');
+    }
+}
+
+function fillGitHub(){
+    const gitHubCard = document.getElementById('gitHubEl');
+    if (linkedinInput.value) {
+        gitHubCard.classList.remove('card__item-list-no-border');
+        gitHubCard.classList.add('card__item-list');
+    }
+}
 
 printDatafromLS(); 
