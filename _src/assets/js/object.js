@@ -19,11 +19,18 @@ function fillFormfromOBject(){
     inputTel.value = userInfo.phone;
     setGitHub.value = userInfo.github;
     linkedinInput.value = userInfo.linkedin;
-    profileImage.style.backgroundImage = userInfo.photo;
     profilePreview.style.backgroundImage = userInfo.miniature;
 }
 
 function fillCardfromObject(){
+    cardUserName.innerHTML = userInfo.name;
+    cardUserJob.innerHTML = userInfo.job;
+    profileImage.style.backgroundImage = userInfo.photo;
+    const emailCard = document.getElementById('email-li')
+    if (inputEmailEl.value) {
+        emailCard.classList.remove('card__item-list-no-border');
+        emailCard.classList.add('card__item-list');
+    }
 
 }
 
