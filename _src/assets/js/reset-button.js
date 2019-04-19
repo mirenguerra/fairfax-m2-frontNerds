@@ -1,65 +1,89 @@
-// El boton reset tiene que poner la paleta de colores en default, borrar todos los input del ormulario, borrar fotos miniatura y preview. También tiene que dejar la tarjeta vacía y los iconos sin rodear.
+// El boton reset abre un pop-up para borrar o no la información añadida hasta el momento.
 
-// Recoger el botón reset
+//El botón YES resetea el formulario, esto es ,la paleta de colores en default (verdes), borra todos los inputs, la foto miniatura y la foto de preview. También tiene que dejar la tarjeta vacía y los iconos sin rodear.
+
+// Recoge el botón reset
 const buttonResetEl = document.querySelector('.reset__btn');
-// Recoger el select por defecto(el primero)
+// Recoge el select por defecto(el primero)
 const selectEl = document.querySelector('#palette--blue-green');
-// Recoger el formulario con todos sus inputs
+// Recoge todos los inputs del formulario
 const formEl = document.querySelectorAll('.fillTheGap-input');
-// Recoger la foto miniatura
+// Recoge la foto miniatura
 const miniatureEl = document.querySelector('.profile-miniature');
-// Recoger la foto del preview
+// Recoge la foto del preview
 const photoPreviewEl = document.querySelector('.card__picture');
-// Recoger user name de la tarjeta
+// Recoge user name de la tarjeta
 const userNameEl = document.querySelector('.card-user__name');
-// Recoger user job de la tarjeta
+// Recoge user job de la tarjeta
 const userJobEl = document.querySelector('.card-user__position');
+//Button Yes
+const buttonResetYEl = document.querySelector('.btn-resetY');
+//Button NO
+const buttonResetNEl = document.querySelector('.btn-resetN');
+//Pop Up
+const containerAlertEl = document.querySelector('.alert');
 
+//Listeners de los botones Reset,No y Yes, respectivamente
+buttonResetEl.addEventListener('click', alertReset);
+buttonResetNEl.addEventListener('click', keepInfo);
+buttonResetYEl.addEventListener('click', handlerButtonResetClick);
 
-// Crear función que borre el form
-function resetInputs(){
-    for(let i=0;i<formEl.length;i++){
+//Muestra el pop up con las opciones YES y NO
+function alertReset() {
+    containerAlertEl.classList.add('alert-delete');
+}
+
+//Cuando pulsamos el botón NO el pop-up desaparece
+function keepInfo() {
+    containerAlertEl.classList.remove('alert-delete');
+}
+
+// Función auxiliar que borra los inputs del form
+function resetInputs() {
+    for (let i = 0; i < formEl.length; i++) {
         formEl[i].value = '';
     }
 }
 
-// Crear función que borre user name y user job de la tarjeta
-function resetCard(){
+// Función auxiliar que vuelve a escribir el texto por defecto en la tarjeta
+function resetCard() {
     userNameEl.innerHTML = 'User name';
     userJobEl.innerHTML = 'User job';
 }
 
-// Crear función que borre los círculos de las rrss
-function resetRRSSCircles(){
+// Función auxiliar que borra los círculos de las rrss
+function resetRRSSCircles() {
     const arrRRSSCircles = document.querySelectorAll('.card__item-list');
-    for (let i=0; i<arrRRSSCircles.length;i++){
+    for (let i = 0; i < arrRRSSCircles.length; i++) {
         arrRRSSCircles[i].classList.remove('card__item-list');
         arrRRSSCircles[i].classList.add('card__item-list-no-border');
     }
 }
 
-// Crear función que ponga el select en la posición default (el primer select)
-function resetSelect(){
+// Función auxiliar que pone el select en la posición default (el primer select o verdes)
+function resetSelect() {
     selectEl.checked = true;
 }
 
 // Crear función para borrar miniatura y foto de preview
-function resetPhotos(){
+function resetPhotos() {
     miniatureEl.classList.remove('js__profile-preview');
     photoPreviewEl.classList.remove('js__profile-image');
 }
 
-// Escuchar el click del botón reset
-buttonResetEl.addEventListener('click', handleButtonResetClick);
-
-// Poner un handler al click del botón reset
-    // Cada value de cada elemento debe ser igual a ''
-function handleButtonResetClick(){
+// Función global que resetea todo el formulario cuando pulsamos el botón yes
+function handlerButtonResetClick() {
     resetInputs();
     resetCard();
     resetRRSSCircles();
     resetSelect();
     resetPhotos();
+    containerAlertEl.classList.remove('alert-delete');
 }
+
+
+
+
+
 
 
