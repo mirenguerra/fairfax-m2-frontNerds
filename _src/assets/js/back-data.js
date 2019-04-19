@@ -1,4 +1,3 @@
-
 function sendRequest(userInfo) {
     buttonShareEL.disabled = true;
 
@@ -17,12 +16,14 @@ function sendRequest(userInfo) {
 function showURL(result) {
     const responseURL = document.querySelector('.response');
     const twitterBtnEl = document.querySelector('.btn-twitter');
-    
-    if (result.success) {
+    const twitterLink = document.querySelector('.twitter__link');
+    const defaultTweet = "https://twitter.com/intent/tweet?text=Hello%20world%20";
+      
+     if (result.success) {
         responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
-         twitterBtnEl.innerHTML = twitterBtnEl.innerHTML + '<a href="https://twitter.com/intent/tweet?text=Hello%20world%20' + result.cardURL + '</a>';
-        console.log(result.cardURL,'ghgh', twitterBtnEl.innerHTML );
-        
+        twitterBtnEl.classList.remove('hidden');
+        twitterLink.href = defaultTweet + result.cardURL;
+
     } else {
         responseURL.innerHTML = 'ERROR:' + result.error;
     }
