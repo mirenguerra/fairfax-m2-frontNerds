@@ -1,4 +1,3 @@
-console.log('hola');
 const fr = new FileReader();
 const uploadBtn = document.querySelector('.js__profile-trigger');
 const fileField = document.querySelector('.js__profile-upload-btn');
@@ -18,8 +17,8 @@ function getImage(e){
   var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
+  return myFile;
 }
-
 
 /**
  * Una vez tenemos los datos listos en el FR podemos

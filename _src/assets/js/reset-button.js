@@ -67,8 +67,10 @@ function resetSelect() {
 
 // Crear función para borrar miniatura y foto de preview
 function resetPhotos() {
-    miniatureEl.classList.remove('js__profile-preview');
-    photoPreviewEl.classList.remove('js__profile-image');
+    profileImage.style.backgroundImage = 'url("/assets/images/darth-vader.jpg")';
+   
+    // miniatureEl.classList.remove('js__profile-preview');
+    // photoPreviewEl.classList.remove('js__profile-image');
 }
 
 // Función global que resetea todo el formulario cuando pulsamos el botón yes
