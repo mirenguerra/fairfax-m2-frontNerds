@@ -17,7 +17,7 @@ function showURL(result) {
     const responseURL = document.querySelector('.response');
     const twitterBtnEl = document.querySelector('.btn-twitter');
     const twitterLink = document.querySelector('.twitter__link');
-    const defaultTweet = "https://twitter.com/intent/tweet?text=Hello%20world%20";
+    const defaultTweet = "https://twitter.com/intent/tweet?text=My awesome profile card ";
       
      if (result.success) {
         responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
