@@ -10,8 +10,29 @@ function printDatafromLS(){
         userInfo = JSON.parse(userInfofromLS);
         fillFormfromOBject();
         fillCardfromObject();
+        fillPaletteObject();
     }    
 }
+
+function fillPaletteObject(){
+    if(userInfo.palette === 1){
+        inputGreen.checked = true;
+        inputGrey.checked = false;
+        inputRed.checked = false;
+        changePaletteGreen(); 
+    }else if(userInfo.palette === 2){
+        inputRed.checked = true;
+        inputGrey.checked = false;
+        inputGreen.checked = false;
+        changePaletteRed();
+    }else{
+        inputGrey.checked = true;
+        inputGreen.checked = false;
+        inputRed.checked = false;
+        changePaletteGray(); 
+    } 
+}
+
 function fillFormfromOBject(){
     setName.value = userInfo.name;
     setJob.value = userInfo.job;
