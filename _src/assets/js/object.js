@@ -13,7 +13,8 @@ function printDatafromLS(){
         fillPaletteObject();
     }    
 }
-
+//esta funcion hace que se mantenga seleccionado el color de la paleta elegido. 
+//cuando recarga la página si el color es paleta 1 se mantendra seleccionado el input y no variara por defecto.
 function fillPaletteObject(){
     if(userInfo.palette === 1){
         inputGreen.checked = true;
