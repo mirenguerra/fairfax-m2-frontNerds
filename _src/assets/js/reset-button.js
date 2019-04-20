@@ -78,7 +78,7 @@ function resetCache(){
 }
 
 // Escuchar el click del botón reset
-buttonResetEl.addEventListener('click', handleButtonResetClick);
+buttonResetEl.addEventListener('click', handlerButtonResetClick);
 
 // Poner un handler al click del botón reset
 // Cada value de cada elemento debe ser igual a ''

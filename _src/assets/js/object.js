@@ -38,6 +38,7 @@ function fillEmail(){
         emailCard.classList.remove('card__item-list-no-border');
         emailCard.classList.add('card__item-list');
     }
+}
 
 function fillPhone(){
     const phoneCard = document.getElementById('phone-li');
