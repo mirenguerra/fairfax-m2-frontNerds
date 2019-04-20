@@ -1,13 +1,15 @@
 .fieldset__title__container{
     display: flex;
     border-top:1px solid $colorGreyStone;
-    border-bottom:1px solid $colorGreyStone;
     justify-content: space-between;
     font-size: $fontSizeL;
     background-color: $colorBeige;
     align-items: center;
     margin:0 20px;
     padding: 10px 0 7px;
+}
+.section-share{
+    border-bottom:1px solid $colorGreyStone;
 }
 
 .icon-legend__container{
