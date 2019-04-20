@@ -78,9 +78,6 @@ function resetCache(){
     localStorage.removeItem('userInfo');
 }
 
-// Escuchar el click del botón reset
-buttonResetEl.addEventListener('click', handlerButtonResetClick);
-
 // Poner un handler al click del botón reset
 // Cada value de cada elemento debe ser igual a ''
 // Función global que resetea todo el formulario cuando pulsamos el botón yes
