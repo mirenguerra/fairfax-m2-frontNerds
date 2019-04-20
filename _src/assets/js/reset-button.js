@@ -60,9 +60,10 @@ function resetRRSSCircles() {
     }
 }
 
-// Función auxiliar que pone el select en la posición default (el primer select o verdes)
+// Función auxiliar que pone el select en la posición default (el primer select o verdes)// llamo a la funcion que pinta la paleta verde por defecto
 function resetSelect() {
     selectEl.checked = true;
+    changePaletteGreen();
 }
 
 // Crear función para borrar miniatura y foto de preview
