@@ -70,16 +70,12 @@ function resetSelect() {
 function resetPhotos() {
     profileImage.style.backgroundImage = 'url("/assets/images/darth-vader.jpg")';
     profilePreview.style.backgroundImage = `none`;
-    // miniatureEl.classList.remove('js__profile-preview');
-    // photoPreviewEl.classList.remove('js__profile-image');
 }
 
 function resetCache(){
     localStorage.removeItem('userInfo');
 }
 
-// Poner un handler al click del botón reset
-// Cada value de cada elemento debe ser igual a ''
 // Función global que resetea todo el formulario cuando pulsamos el botón yes
 function handlerButtonResetClick() {
     resetInputs();
@@ -90,10 +86,3 @@ function handlerButtonResetClick() {
     resetCache();
     containerAlertEl.classList.remove('alert-delete');
 }
-
-
-
-
-
-
-
