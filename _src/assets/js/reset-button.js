@@ -72,6 +72,7 @@ function resetPhotos() {
     profilePreview.style.backgroundImage = `none`;
 }
 
+// Crear función que borre la caché
 function resetCache(){
     localStorage.removeItem('userInfo');
 }
