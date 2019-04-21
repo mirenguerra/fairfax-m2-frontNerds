@@ -39,8 +39,9 @@ function fillFormfromOBject(){
 }
 
 function fillCardfromObject(){
-    cardUserName.innerHTML = userInfo.name;
-    cardUserJob.innerHTML = userInfo.job;
+    //Si userInfo.name está vacío,pone 'User name' igual para job
+    cardUserName.innerHTML = userInfo.name||'User name';
+    cardUserJob.innerHTML = userInfo.job||'User job';
     profileImage.style.backgroundImage = userInfo.photo;
     fillEmail();
     fillPhone();

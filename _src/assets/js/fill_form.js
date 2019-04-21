@@ -6,7 +6,7 @@ const cardUserName = document.querySelector('.card-user__name');
 function getUserName() {
   const userName = setName.value;
   userInfo.name = userName;
-  // saveDataLs();
+  saveDataLs();
   //llamo al nombre del objeto y a su elemento para sustituirlo en el object y luego llamo a la funcion que lo guarda en LocalStorage (y así con todas)
   cardUserName.innerHTML = userName;
   if (userName === '') {
