@@ -19,12 +19,12 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/reset-button.js",
-      "_src/assets/js/object.js",
       "_src/assets/js/fill_form.js",
       "_src/assets/js/design_palette.js", 
       "_src/assets/js/design_circles.js",
       "_src/assets/js/collapsible_form.js",
       "_src/assets/js/get-avatar.js",
+      "_src/assets/js/localStorage.js",
       "_src/assets/js/back-data.js",
       "_src/assets/js/share.js"
 		],

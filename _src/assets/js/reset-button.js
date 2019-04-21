@@ -60,17 +60,21 @@ function resetRRSSCircles() {
     }
 }
 
-// Función auxiliar que pone el select en la posición default (el primer select o verdes)
+// Función auxiliar que pone el select en la posición default (el primer select o verdes)// llamo a la funcion que pinta la paleta verde por defecto
 function resetSelect() {
     selectEl.checked = true;
+    changePaletteGreen();
 }
 
 // Crear función para borrar miniatura y foto de preview
 function resetPhotos() {
     profileImage.style.backgroundImage = 'url("/assets/images/darth-vader.jpg")';
     profilePreview.style.backgroundImage = `none`;
-    // miniatureEl.classList.remove('js__profile-preview');
-    // photoPreviewEl.classList.remove('js__profile-image');
+}
+
+// Crear función que borre la caché
+function resetCache(){
+    localStorage.removeItem('userInfo');
 }
 
 // Función global que resetea todo el formulario cuando pulsamos el botón yes
@@ -80,12 +84,6 @@ function handlerButtonResetClick() {
     resetRRSSCircles();
     resetSelect();
     resetPhotos();
+    resetCache();
     containerAlertEl.classList.remove('alert-delete');
 }
-
-
-
-
-
-
-
