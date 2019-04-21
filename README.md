@@ -19,8 +19,8 @@ Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.
 
 ## Autores ✒️
 
-**Miren Guerra** https://github.com/mirenguerra
-**Irene Fuente** https://github.com/ifuenteromero
-**Tania López** https://github.com/tanialopezab
-**Valeria Lorente** https://github.com/valerialp
-**Clarette Terrasi** https://github.com/cterrasid
+* **Miren Guerra** https://github.com/mirenguerra
+* **Irene Fuente** https://github.com/ifuenteromero
+* **Tania López** https://github.com/tanialopezab
+* **Valeria Lorente** https://github.com/valerialp
+* **Clarette Terrasi** https://github.com/cterrasid
