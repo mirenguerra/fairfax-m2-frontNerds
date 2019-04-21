@@ -1,5 +1,5 @@
 # Awesome Profile Cards
-_Proyecto desarrollado durante el Módulo 2 de Adalab, desarrollado por frontNerds_
+_Proyecto correspondiente al Módulo 2 de Adalab, desarrollado por frontNerds_
 
 Se trata de una página web que permite al usuario crear una tarjeta de presentación digital; la creación de la tarjeta consta de tres pasos:
 
