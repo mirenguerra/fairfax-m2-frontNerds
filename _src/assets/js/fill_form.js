@@ -11,6 +11,7 @@ function getUserName() {
   if (userName === '') {
     cardUserName.innerHTML = 'User name';
   }
+  saveDataLs()
   console.log(userInfo);
 }
 
@@ -29,6 +30,7 @@ function getUserJob() {
     
   }
  console.log(userInfo);
+ saveDataLs()
 }
 
 setJob.addEventListener('keyup', getUserJob);
@@ -43,7 +45,7 @@ function handlerEmail() {
   userInfo.email = inputValue;
   linkEmailEl.href = `mailto:${inputValue}`;
     console.log(linkEmailEl);
-  
+    saveDataLs();
 }
 
 inputEmailEl.addEventListener('keyup', handlerEmail);
@@ -57,6 +59,7 @@ linkTel.setAttribute('href', 'tel: +34' + inputTel.value);
 const telValue = inputTel.value;
 userInfo.phone = telValue;
 console.log(userInfo);
+saveDataLs();
 }
 
 inputTel.addEventListener('keyup', changeLinkTel);
@@ -74,6 +77,7 @@ function getGitHub() {
     iconStyle.classList.add('card__item-list-default');
   }
   console.log(userInfo);
+  saveDataLs();
 }
 
 setGitHub.addEventListener('keyup', getGitHub);
@@ -91,4 +95,5 @@ function handleInputKeyup() {
   userInfo.linkedin = inputValueLnkdIn;
   linkLnkdIn.href = inputValueLnkdIn;
   console.log(userInfo);
+  saveDataLs();
 }

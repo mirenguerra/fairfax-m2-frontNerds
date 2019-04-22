@@ -30,8 +30,11 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
  userInfo.photo=fr.result;
+ userInfo.miniature=fr.result;
+
  console.log(userInfo);
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  saveDataLs();
 }
 
 

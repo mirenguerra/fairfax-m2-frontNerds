@@ -1,3 +1,5 @@
+// import { userInfo } from "os";
+
 // El boton reset abre un pop-up para borrar o no la información añadida hasta el momento.
 
 //El botón YES resetea el formulario, esto es ,la paleta de colores en default (verdes), borra todos los inputs, la foto miniatura y la foto de preview. También tiene que dejar la tarjeta vacía y los iconos sin rodear.
@@ -81,6 +83,7 @@ function handlerButtonResetClick() {
     resetSelect();
     resetPhotos();
     containerAlertEl.classList.remove('alert-delete');
+    localStorage.removeItem('userInfo');
 }
 
 
