@@ -1,5 +1,3 @@
-
-
 const fr = new FileReader();
 const uploadBtn = document.querySelector('.js__profile-trigger');
 const fileField = document.querySelector('.js__profile-upload-btn');
@@ -31,11 +29,9 @@ function writeImage() {
    * el resultado
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
-  userInfo.photo = `url(${fr.result})`;
-  saveDataLs();
+ userInfo.photo=fr.result;
+ console.log(userInfo);
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  userInfo.miniature = `url(${fr.result})`;
-  saveDataLs();
 }
 
 
