@@ -35,7 +35,9 @@ function fillFormfromOBject(){
     inputTel.value = userInfo.phone;
     setGitHub.value = userInfo.github;
     linkedinInput.value = userInfo.linkedin;
-    profilePreview.style.backgroundImage = userInfo.miniature;
+    profilePreview.style.backgroundImage = `url(${userInfo.miniature})`;
+    profileImage.style.backgroundImage =`url(${userInfo.photo})`;
+    console.log(userInfo.miniature);
 }
 
 function fillCardfromObject(){
