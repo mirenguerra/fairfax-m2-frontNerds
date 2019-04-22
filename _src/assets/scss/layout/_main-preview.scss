@@ -111,6 +111,9 @@
     display: inline-flex;
     grid-area: picture;
     box-shadow: $colorBoxShadow;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/images/darth-vader.jpg')
 }
 
 .card__social-media-list{
