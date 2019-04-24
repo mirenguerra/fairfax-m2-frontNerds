@@ -65,6 +65,7 @@ function resetRRSSCircles() {
 // Función auxiliar que pone el select en la posición default (el primer select o verdes)
 function resetSelect() {
     selectEl.checked = true;
+    changePaletteGreen();
 }
 
 // Crear función para borrar miniatura y foto de preview
@@ -84,6 +85,7 @@ function handlerButtonResetClick() {
     resetPhotos();
     containerAlertEl.classList.remove('alert-delete');
     localStorage.removeItem('userInfo');
+    
 }
 
 

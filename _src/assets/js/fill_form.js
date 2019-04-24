@@ -73,6 +73,7 @@ function getGitHub() {
   const userGitHub = setGitHub.value;
   userInfo.github = userGitHub;
   cardUserGitHub.href = `https://github.com/${userGitHub}`;
+  cardUserGitHub.setAttribute('target','_blank') ;  
   if (userGitHub !== '') {
     iconStyle.classList.add('card__item-list-default');
   }
