@@ -37,7 +37,7 @@ function fillFormfromOBject(){
     linkedinInput.value = userInfo.linkedin;
     profilePreview.style.backgroundImage = `url(${userInfo.miniature})`;
     profileImage.style.backgroundImage =`url(${userInfo.photo})`;
-    console.log(userInfo.miniature);
+    // console.log(userInfo.miniature);
 }
 
 function fillCardfromObject(){
@@ -75,6 +75,7 @@ function fillLinkedin(){
     if (linkedinInput.value) {
         linkedinCard.classList.remove('card__item-list-no-border');
         linkedinCard.classList.add('card__item-list');
+        linkLnkdIn.href = linkedinInput.value;
     }
 }
 
@@ -86,6 +87,9 @@ function fillGitHub(){
         gitHubCard.classList.add('card__item-list');
         cardUserGitHub.href = `https://github.com/${userGitHub}`;
         cardUserGitHub.setAttribute('target','_blank') ;  
+    }
+    else {
+        cardUserGitHub.href ='';
     }
 }
 
