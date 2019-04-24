@@ -69,7 +69,7 @@ function resetSelect() {
 
 // Crear función para borrar miniatura y foto de preview
 function resetPhotos() {
-    profileImage.style.backgroundImage = 'url("/assets/images/darth-vader.jpg")';
+    profileImage.style.backgroundImage = 'url("assets/images/darth-vader.jpg")';
     profilePreview.style.backgroundImage = `none`;
     // miniatureEl.classList.remove('js__profile-preview');
     // photoPreviewEl.classList.remove('js__profile-image');
