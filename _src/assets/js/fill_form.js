@@ -29,7 +29,7 @@ function getUserJob() {
     cardUserJob.innerHTML = 'User job';
     
   }
- console.log(userInfo);
+
  saveDataLs()
 }
 
@@ -58,7 +58,6 @@ function changeLinkTel() {
 linkTel.setAttribute('href', 'tel: +34' + inputTel.value);
 const telValue = inputTel.value;
 userInfo.phone = telValue;
-console.log(userInfo);
 saveDataLs();
 }
 
@@ -94,6 +93,5 @@ function handleInputKeyup() {
   const inputValueLnkdIn = linkedinInput.value;
   userInfo.linkedin = inputValueLnkdIn;
   linkLnkdIn.href = inputValueLnkdIn;
-  console.log(userInfo);
   saveDataLs();
 }

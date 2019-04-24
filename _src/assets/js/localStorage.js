@@ -64,6 +64,7 @@ function fillEmail(){
 function fillPhone(){
     const phoneCard = document.getElementById('phone-li');
     if (inputTel.value) {
+        linkTel.setAttribute('href', 'tel: +34' + inputTel.value);
         phoneCard.classList.remove('card__item-list-no-border');
         phoneCard.classList.add('card__item-list');
     }
