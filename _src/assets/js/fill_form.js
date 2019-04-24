@@ -77,7 +77,6 @@ function getGitHub() {
   if (userGitHub !== '') {
     iconStyle.classList.add('card__item-list-default');
   }
-  console.log(userInfo);
   saveDataLs();
 }
 

@@ -53,9 +53,11 @@ function fillCardfromObject(){
 
 function fillEmail(){
     const emailCard = document.getElementById('email-li');
+    const emailLink = document.querySelector('.email');
     if (inputEmailEl.value) {
         emailCard.classList.remove('card__item-list-no-border');
         emailCard.classList.add('card__item-list');
+        emailLink.href = `mailto:${inputEmailEl.value}`;
     }
 }
 
@@ -77,9 +79,12 @@ function fillLinkedin(){
 
 function fillGitHub(){
     const gitHubCard = document.getElementById('gitHubEl');
+    const userGitHub = setGitHub.value;
     if (linkedinInput.value) {
         gitHubCard.classList.remove('card__item-list-no-border');
         gitHubCard.classList.add('card__item-list');
+        cardUserGitHub.href = `https://github.com/${userGitHub}`;
+        cardUserGitHub.setAttribute('target','_blank') ;  
     }
 }
 
