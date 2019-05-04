@@ -1,121 +1,83 @@
-// function fillUserDataObject(key, value) {
-//   userData[key] = value;
-// }
 
-// // NAME AND JOB INPUTS
-// const inputName = document.querySelector('#name');
-// const cardUserName = document.querySelector('.card-user__name');
-
-// const inputJob = document.querySelector('#job');
-// const cardUserJob = document.querySelector('.card-user__position');
-
-// function handlerGetInfoKeyup(event) {
-//   const inputValue = event.currentTarget.value;
-//   const key = event.currentTarget.name;
-
-//   fillUserDataObject(key, inputValue);
-//   saveDataLs();
-
-//   // !userName ?
-// }
-
-// //Listener
-// inputName.addEventListener('keyup', handlerGetInfoKeyup);
-
-// NAME INPUT
-const inputName = document.querySelector('#name');
-const cardUserName = document.querySelector('.card-user__name');
-
-function getUserName() {
-  const userName = inputName.value;
-  userInfo.name = userName; //llamo al nombre del objeto y a su elemento para sustituirlo en el object
-  cardUserName.innerHTML = userName;
-
-  !userName ? (cardUserName.innerHTML = 'User name') : '';
-
-  saveDataLs();
-  console.log(userInfo);
+function fillUserInfoObject(key, value) {
+  userInfo[key] = value;
 }
 
-inputName.addEventListener('keyup', getUserName);
+//REFACTORING 🚀
 
-// JOB INPUT
-const setJob = document.querySelector('#job');
-const cardUserJob = document.querySelector('.card-user__position');
-
-function getUserJob() {
-  const userJob = setJob.value;
-  userInfo.job = userJob;
-  cardUserJob.innerHTML = userJob;
-  if (userJob === '') {
-    cardUserJob.innerHTML = 'User job';
+// NAME & JOB INPUTS
+function fillNameAndJob (key) {
+  const inputEl = document.querySelector(`#${key}`);
+  const cardUserEl = document.querySelector(`.card-user__${key}`);
+  const myKey = key;  
+  const handlerUserKeyup = event => {
+    const userInfoToFill = inputEl.value;
+    cardUserEl.innerHTML = userInfoToFill || `User ${myKey}`;
+    
+    const key = event.currentTarget.name;
+    fillUserInfoObject(key, userInfoToFill);
+    saveDataLs();
   }
-
-  saveDataLs();
+  
+  inputEl.addEventListener('keyup', handlerUserKeyup);
 }
 
-setJob.addEventListener('keyup', getUserJob);
+fillNameAndJob('name');
+fillNameAndJob('job');
 
-//Email
-const inputEmailEl = document.querySelector('#email');
-let linkEmailEl = document.querySelector('.email');
+// // EMAIL INPUT
+// const inputEmailEl = document.querySelector('#email');
+// let linkEmailEl = document.querySelector('.email');
 
-function handlerEmail() {
-  const inputValue = inputEmailEl.value;
-  userInfo.email = inputValue;
-  linkEmailEl.href = `mailto:${inputValue}`;
-  console.log(linkEmailEl);
-  saveDataLs();
-}
+// const handlerEmailKeyup = event => {
+//   const userInfoToFill = inputEmailEl.value;
+//   linkEmailEl.href = `mailto:${userInfoToFill}` || '';
 
-inputEmailEl.addEventListener('keyup', handlerEmail);
+//   const key = event.currentTarget.name;
+//   const value =  userInfoToFill;
+//   fillUserInfoObject(key, value);
+//   saveDataLs();
+// }
+// inputEmailEl.addEventListener('keyup', handlerEmailKeyup);
 
-//PHONE
+// // PHONE INPUT
+// const inputPhoneEl = document.querySelector('#phone');
+// const linkPhoneEl = document.querySelector('#phone-link');
 
-const inputTel = document.getElementById('phone');
-const linkTel = document.getElementById('phone-link');
-function changeLinkTel() {
-  linkTel.setAttribute('href', 'tel: +34' + inputTel.value);
-  const telValue = inputTel.value;
-  userInfo.phone = telValue;
-  saveDataLs();
-}
+// const handlerPhoneKeyup = event => {
+//   const userInfoToFill = inputPhoneEl.value;
 
-inputTel.addEventListener('keyup', changeLinkTel);
+//   linkPhoneEl.setAttribute('href', 'tel: +34' + userInfoToFill);
+//   userInfo.phone = telValue;
+//   saveDataLs();
+// }
+// inputPhoneEl.addEventListener('keyup', handlerPhoneKeyup);
 
 // GITHUB
-const setGitHub = document.querySelector('#gitHub');
+const inputGitHubEl = document.querySelector('#gitHub');
 const cardUserGitHub = document.querySelector('#gitHub-link');
 const iconStyle = document.querySelector('#gitHubEl');
 
-function getGitHub() {
-  const userGitHub = setGitHub.value;
+const getGitHub = () => {
+  const userGitHub = inputGitHubEl.value;
   userInfo.github = userGitHub;
-
   cardUserGitHub.setAttribute('target', '_blank');
-  if (userGitHub !== '') {
-    iconStyle.classList.add('card__item-list-default');
-    cardUserGitHub.href = `https://github.com/${userGitHub}`;
-  } else {
-    cardUserGitHub.href = '';
-  }
-  console.log(userGitHub);
-  saveDataLs();
+  
+  userGitHub !== '' ? (iconStyle.classList.add('card__item-list-default'), cardUserGitHub.href = `https://github.com/${userGitHub}`) : cardUserGitHub.href = '';
+  saveDataLs(); 
 }
-
-setGitHub.addEventListener('keyup', getGitHub);
+inputGitHubEl.addEventListener('keyup', getGitHub);
 
 // USER LINKEDIN
+const inputLinkedinEl = document.querySelector('#linkedin');
+const cardUserLinkedinEl = document.querySelector('.card__link-linkedin');
 
-const inputLnkdIn = document.querySelector('#linkedin');
-const linkLnkdIn = document.querySelector('.card__link-linkedin');
-
-inputLnkdIn.addEventListener('keyup', handleInputKeyup);
-
-function handleInputKeyup() {
-  const linkedinInput = inputLnkdIn;
+const handleInputKeyup = () => {
+  const linkedinInput = inputLinkedinEl;
   const inputValueLnkdIn = linkedinInput.value;
+
   userInfo.linkedin = inputValueLnkdIn;
-  linkLnkdIn.href = inputValueLnkdIn;
+  cardUserLinkedinEl.href = inputValueLnkdIn;
   saveDataLs();
 }
+inputLinkedinEl.addEventListener('keyup', handleInputKeyup);
