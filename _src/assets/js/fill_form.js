@@ -6,7 +6,6 @@ function fillUserInfoObject(element, key, value) {
 }
 
 //REFACTORING 🚀
-
 // NAME & JOB INPUTS
 function fillNameAndJob(inputName) {
   const inputEl = document.querySelector(`#${inputName}`);
@@ -40,9 +39,14 @@ function fillEmailAndPhone(inputName) {
     const element = event.currentTarget;
 
     if (myKey === 'email') {
-      cardUserEl.href = userInfoToFill ? `mailto:${userInfoToFill}` : '#';
+      userInfoToFill
+        ? // ? (cardUserEl.href = `mailto:${userInfoToFill}`)
+          (cardUserEl.href =
+            'https://books.adalab.es/materiales-front-end-f/modulo-2.-programando-la-web/2_3_condicionales')
+        : (cardUserEl.href = 'www.google.es');
+      console.log(cardUserEl.href);
     } else if (myKey === 'phone') {
-      cardUserEl.href = userInfoToFill ? 'tel: +34' + userInfoToFill : '#';
+      cardUserEl.href = userInfoToFill ? 'tel: +34' + userInfoToFill : '';
     }
     fillUserInfoObject(element, myKey, userInfoToFill);
     saveDataLs();
@@ -54,34 +58,6 @@ fillEmailAndPhone('email');
 fillEmailAndPhone('phone');
 
 /////////////////////////////////////////
-
-// EMAIL INPUT
-// const inputEmailEl = document.querySelector('#email');
-// let cardUserEmailEl = document.querySelector('.email');
-
-// const handlerEmailKeyup = event => {
-//   const userInfoToFill = inputEmailEl.value;
-//   linkEmailEl.href = `mailto:${userInfoToFill}` || '';
-
-//   const element = event.currentTarget;
-//   fillUserInfoObject(element, key, value);
-//   saveDataLs();
-// };
-// inputEmailEl.addEventListener('keyup', handlerEmailKeyup);
-
-// // PHONE INPUT
-// const inputPhoneEl = document.querySelector('#phone');
-// const linkPhoneEl = document.querySelector('#phone-link');
-
-// const handlerPhoneKeyup = event => {
-//   const userInfoToFill = inputPhoneEl.value;
-//   linkPhoneEl.setAttribute('href', 'tel: +34' + userInfoToFill);
-
-//   const element = event.currentTarget;
-//   fillUserInfoObject(element, key, value);
-//   saveDataLs();
-// };
-// inputPhoneEl.addEventListener('keyup', handlerPhoneKeyup);
 
 // GITHUB
 const inputGitHubEl = document.querySelector('#gitHub');
