@@ -1,13 +1,13 @@
-function fillUserInfoObject(element, key, value) {
+const fillUserInfoObject = (element, key, value) => {
   key = element.name;
   value = userInfoToFill;
 
   userInfo[key] = value;
-}
+};
 
 //REFACTORING 🚀
 // NAME & JOB INPUTS
-function fillNameAndJob(inputName) {
+const fillNameAndJob = inputName => {
   const inputEl = document.querySelector(`#${inputName}`);
   const cardUserEl = document.querySelector(`.card-user__${inputName}`);
   const myKey = inputName;
@@ -22,16 +22,16 @@ function fillNameAndJob(inputName) {
   };
 
   inputEl.addEventListener('keyup', handlerUserKeyup);
-}
+};
 fillNameAndJob('name');
 fillNameAndJob('job');
 
 /////////////////////////////////////////
 
 // EMAIL AND PHONE INPUTS
-function fillEmailAndPhone(inputName) {
+const fillEmailAndPhone = inputName => {
   const inputEl = document.querySelector(`#${inputName}`);
-  const cardUserEl = document.querySelector(`.card-user__${inputName}`);
+  const cardUserEl = document.querySelector(`.card__link-${inputName}`);
   const myKey = inputName;
 
   const handlerUserKeyup = event => {
@@ -40,19 +40,18 @@ function fillEmailAndPhone(inputName) {
 
     if (myKey === 'email') {
       userInfoToFill
-        ? // ? (cardUserEl.href = `mailto:${userInfoToFill}`)
-          (cardUserEl.href =
-            'https://books.adalab.es/materiales-front-end-f/modulo-2.-programando-la-web/2_3_condicionales')
-        : (cardUserEl.href = 'www.google.es');
-      console.log(cardUserEl.href);
+        ? cardUserEl.setAttribute('href', `mailto:${userInfoToFill}`)
+        : cardUserEl.setAttribute('href', '');
     } else if (myKey === 'phone') {
-      cardUserEl.href = userInfoToFill ? 'tel: +34' + userInfoToFill : '';
+      userInfoToFill
+        ? cardUserEl.setAttribute('href', `tel: +34${userInfoToFill}`)
+        : cardUserEl.setAttribute('href', '');
     }
     fillUserInfoObject(element, myKey, userInfoToFill);
     saveDataLs();
   };
   inputEl.addEventListener('keyup', handlerUserKeyup);
-}
+};
 
 fillEmailAndPhone('email');
 fillEmailAndPhone('phone');
