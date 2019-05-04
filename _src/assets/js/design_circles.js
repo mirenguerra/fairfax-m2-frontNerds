@@ -8,7 +8,7 @@ const handlerCirclesCard = event => {
     : (circleElement.classList.remove('card__item-list-no-border'), circleElement.classList.add('card__item-list'));
 }
 
-const inputsElementArr = document.querySelectorAll('.fillTheGap-input');
+const inputsElementArr = document.querySelectorAll('.circle-item');
 
 for(let i = 0; i<inputsElementArr.length; i++){
     inputsElementArr[i].addEventListener('keyup', handlerCirclesCard);
