@@ -58,31 +58,64 @@ fillEmailAndPhone('phone');
 
 /////////////////////////////////////////
 
-// GITHUB
-const inputGitHubEl = document.querySelector('#gitHub');
-const cardUserGitHub = document.querySelector('#gitHub-link');
+//GITHUB AND LINKEDIN
+const fillGithubAndLinkedin = inputName => {
+  const inputEl = document.querySelector(`#${inputName}`);
+  const cardUserEl = document.querySelector(`.card__link-${inputName}`);
+  const myKey = inputName;
 
-const getGitHub = () => {
-  const inputGithubValue = inputGitHubEl.value;
-  userInfo.github = inputGithubValue;
+  const handlerUserKeyup = event => {
+    const userInfoToFill = inputEl.value;
+    const element = event.currentTarget;
 
-  inputGithubValue !== ''
-    ? (cardUserGitHub.href = `https://github.com/${inputGithubValue}`)
-    : (cardUserGitHub.href = '');
-  saveDataLs();
+    if (myKey === 'github') {
+      userInfoToFill
+        ? cardUserEl.setAttribute(
+            'href',
+            `https://github.com/${userInfoToFill}`
+          )
+        : cardUserEl.setAttribute('href', '');
+    } else if (myKey === 'linkedin') {
+      userInfoToFill
+        ? cardUserEl.setAttribute('href', userInfoToFill)
+        : cardUserEl.setAttribute('href', '');
+    }
+    fillUserInfoObject(element, myKey, userInfoToFill);
+    saveDataLs();
+  };
+  inputEl.addEventListener('keyup', handlerUserKeyup);
 };
-inputGitHubEl.addEventListener('keyup', getGitHub);
 
-// USER LINKEDIN
-const inputLinkedinEl = document.querySelector('#linkedin');
-const cardUserLinkedinEl = document.querySelector('.card__link-linkedin');
+fillGithubAndLinkedin('github');
+fillGithubAndLinkedin('linkedin');
 
-const handleInputKeyup = () => {
-  const linkedinInput = inputLinkedinEl;
-  const inputValueLnkdIn = linkedinInput.value;
+////////////////////////////////////////
 
-  userInfo.linkedin = inputValueLnkdIn;
-  cardUserLinkedinEl.href = inputValueLnkdIn;
-  saveDataLs();
-};
-inputLinkedinEl.addEventListener('keyup', handleInputKeyup);
+// // GITHUB
+// const inputGitHubEl = document.querySelector('#gitHub');
+// const cardUserGitHub = document.querySelector('#gitHub-link');
+
+// const getGitHub = () => {
+//   const inputGithubValue = inputGitHubEl.value;
+//   userInfo.github = inputGithubValue;
+
+//   inputGithubValue !== ''
+//     ? (cardUserGitHub.href = `https://github.com/${inputGithubValue}`)
+//     : (cardUserGitHub.href = '');
+//   saveDataLs();
+// };
+// inputGitHubEl.addEventListener('keyup', getGitHub);
+
+// // USER LINKEDIN
+// const inputLinkedinEl = document.querySelector('#linkedin');
+// const cardUserLinkedinEl = document.querySelector('.card__link-linkedin');
+
+// const handleInputKeyup = () => {
+//   const linkedinInput = inputLinkedinEl;
+//   const inputValueLnkdIn = linkedinInput.value;
+
+//   userInfo.linkedin = inputValueLnkdIn;
+//   cardUserLinkedinEl.href = inputValueLnkdIn;
+//   saveDataLs();
+// };
+// inputLinkedinEl.addEventListener('keyup', handleInputKeyup);
