@@ -3,46 +3,40 @@ function saveDataLs() {
   localStorage.setItem('userInfo', JSON.stringify(userInfo));
 }
 
-// // Funcion que comprueba si hay datos en localStoragey con ellos hacer una autorrellenado
-// function printDatafromLS(){
-//     const userInfofromLS = localStorage.getItem('userInfo');
-//     if (userInfofromLS) {
-//         userInfo = JSON.parse(userInfofromLS);
-//         fillPaletteObject();
-//         fillFormfromOBject();
-//         fillCardfromObject();
-//     }
-// }
-// //esta funcion hace que se mantenga seleccionado el color de la paleta elegido.
-// //cuando recarga la página si el color es paleta 1 se mantendra seleccionado el input y no variara por defecto.
-// function fillPaletteObject(){
-//     if(userInfo.palette === 1){
-//         inputGreen.checked = true;
-//         changePaletteGreen();
-//     }else if(userInfo.palette === 2){
-//         inputRed.checked = true;
-//         changePaletteRed();
-//     }else{
-//         inputGrey.checked = true;
-//         changePaletteGray();
-//     }
-// }
+// Funcion que comprueba si hay datos en localStorage y con ellos hacer una autorrellenado
+function printDatafromLS() {
+  const userInfofromLS = localStorage.getItem('userInfo');
+  if (userInfofromLS) {
+    userInfo = JSON.parse(userInfofromLS);
+    fillFormfromOBject();
+    // fillPaletteObject();
+    // fillCardfromObject();
+  }
+}
 
-// // function fillCardfromObject(){
-// //     userInfoToFill = userInfo
-// // }
+function fillFormfromOBject() {
+  document.getElementById('name').value = userInfo.name;
+  document.getElementById('job').value = userInfo.job;
+  document.getElementById('email').value = userInfo.email;
+  document.getElementById('phone').value = userInfo.phone;
+  document.getElementById('linkedin').value = userInfo.linkedin;
+  document.getElementById('github').value = userInfo.github;
+}
 
-// // function fillFormfromOBject(){
-// //     setName.value = userInfo.name;
-// //     setJob.value = userInfo.job;
-// //     inputEmailEl.value = userInfo.email;
-// //     inputTel.value = userInfo.phone;
-// //     setGitHub.value = userInfo.github;
-// //     linkedinInput.value = userInfo.linkedin;
-// //     profilePreview.style.backgroundImage = `url(${userInfo.miniature})`;
-// //     profileImage.style.backgroundImage =`url(${userInfo.photo})`;
-// //     // console.log(userInfo.miniature);
-// // }
+//esta funcion hace que se mantenga seleccionado el color de la paleta elegido.
+//cuando recarga la página si el color es paleta 1 se mantendra seleccionado el input y no variara por defecto.
+function fillPaletteObject() {
+  if (userInfo.palette === 1) {
+    inputGreen.checked = true;
+    changePaletteGreen();
+  } else if (userInfo.palette === 2) {
+    inputRed.checked = true;
+    changePaletteRed();
+  } else {
+    inputGrey.checked = true;
+    changePaletteGray();
+  }
+}
 
 // function fillCardfromObject(){
 //     //Si userInfo.name está vacío,pone 'User name' igual para job
@@ -97,4 +91,4 @@ function saveDataLs() {
 //     }
 // }
 
-// printDatafromLS();
+printDatafromLS();
