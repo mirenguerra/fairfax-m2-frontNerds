@@ -7,35 +7,23 @@ const inputGrey = document.getElementById('palette--blue-gray');
 const inputGreen = document.getElementById('palette--blue-green');
 const contactList = document.querySelector('.card-sm__container');
 
+const inputElArr = [inputGreen, inputRed, inputGrey];
+const palettesClassNamesArr = ['green-palette', 'red-palette', 'gray-palette'];
+const borderColorClassNameArr = ['borderLeftGreen', 'borderLeftRed', 'borderLeftGray'];
 
-function changePaletteRed(){
-  userInfo.palette = 2;
+const handlerPaletteClick = (event)=>{
+  const selectedPalette = event.currentTarget;
+  userInfo.palette = selectedPalette.getAttribute('value');
   saveDataLs();
-  userName.classList.remove('gray-palette', 'green-palette', 'borderLeftGreen', 'borderLeftGray');
-  userName.classList.add('red-palette', 'borderLeftRed');
-  contactList.classList.remove('gray-palette', 'green-palette');
-  contactList.classList.add('red-palette');
+  const selectedItemIndex = inputElArr.indexOf(selectedPalette);
+  for (let i = 0; i<3; i++){
+    userName.classList.remove(palettesClassNamesArr[i], borderColorClassNameArr[i]);
+    contactList.classList.remove(palettesClassNamesArr[i]);
+  }
+  userName.classList.add(palettesClassNamesArr[selectedItemIndex],borderColorClassNameArr[selectedItemIndex]);
+  contactList.classList.add(palettesClassNamesArr[selectedItemIndex]);    
+}
+for (let i = 0; i<inputElArr.length; i++){
+  inputElArr[i].addEventListener('click', handlerPaletteClick)
 }
 
-function changePaletteGray() {
-  userInfo.palette = 3;
-  saveDataLs();
-  userName.classList.remove('green-palette', 'red-palette', 'borderLeftGreen', 'borderLeftRed');
-  userName.classList.add('gray-palette', 'borderLeftGray');
-  contactList.classList.remove('green-palette', 'red-palette');
-  contactList.classList.add('gray-palette');
-}
-
-function changePaletteGreen() {
-  userInfo.palette = 1;
-  saveDataLs();
-  userName.classList.remove('gray-palette', 'red-palette', 'borderLeftGray', 'borderLeftRed');
-  userName.classList.add('green-palette', 'borderLeftGreen');
-  contactList.classList.remove('gray-palette', 'red-palette');
-  contactList.classList.add('green-palette');
-}
-
-
-inputRed.addEventListener('click', changePaletteRed);
-inputGrey.addEventListener('click', changePaletteGray);
-inputGreen.addEventListener('click', changePaletteGreen);

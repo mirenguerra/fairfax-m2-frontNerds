@@ -7,9 +7,18 @@ function printDatafromLS() {
   const userInfofromLS = localStorage.getItem('userInfo');
   if (userInfofromLS) {
     userInfo = JSON.parse(userInfofromLS);
-    fillFormfromOBject();
     fillPaletteObject();
+    fillFormfromOBject();
     fillCardfromObject();
+  }
+}
+function fillPaletteObject() {
+  if (userInfo.palette === 1) {
+    inputGreen.checked = true;
+  } else if (userInfo.palette === 2) {
+    inputRed.checked = true;
+  } else {
+    inputGrey.checked = true;
   }
 }
 
@@ -20,16 +29,6 @@ function fillFormfromOBject() {
   document.getElementById('phone').value = userInfo.phone;
   document.getElementById('linkedin').value = userInfo.linkedin;
   document.getElementById('github').value = userInfo.github;
-}
-
-function fillPaletteObject() {
-  if (userInfo.palette === 1) {
-    inputGreen.checked = true;
-  } else if (userInfo.palette === 2) {
-    inputRed.checked = true;
-  } else {
-    inputGrey.checked = true;
-  }
 }
 
 function fillCardfromObject() {
