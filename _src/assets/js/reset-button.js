@@ -6,22 +6,22 @@ const photoPreviewEl = document.querySelector('.card__picture');
 const selectEl = document.querySelector('#palette--blue-green');
 const formEl = document.querySelectorAll('.fillTheGap-input');
 const miniatureEl = document.querySelector('.profile-miniature');
-const resetInputs = () => {
+function resetInputs () {
   for(let i=0;i<formEl.length;i++){
     formEl[i].value = '';
   }
-};
+}
 const resetCard = () => {
   userNameEl.innerHTML = 'User name';
   userJobEl.innerHTML = 'User job';
 };
-const resetSN = () => {
+function resetSN(){
   const arrSN = document.querySelectorAll('.card__item-list');
   for (let i=0; i<arrSN.length;i++){
     arrSN[i].classList.remove('card__item-list');
     arrSN[i].classList.add('card__item-list-no-border');
   }
-};
+}
 const resetSelect = () => {
   selectEl.checked = true;
 };
@@ -29,7 +29,7 @@ const resetPhotos = () => {
   miniatureEl.classList.remove('js__profile-preview');
   photoPreviewEl.classList.remove('js__profile-image');
 };
-const handleButtonResetClick = () => {
+function handleButtonResetClick () {
   resetInputs();
   resetCard();
   resetSN();
