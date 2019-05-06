@@ -9,7 +9,7 @@ function printDatafromLS() {
   if (userInfofromLS) {
     userInfo = JSON.parse(userInfofromLS);
     fillFormfromOBject();
-    // fillPaletteObject();
+    fillPaletteObject();
     // fillCardfromObject();
   }
 }
@@ -20,7 +20,8 @@ function fillFormfromOBject() {
   document.getElementById('email').value = userInfo.email;
   document.getElementById('phone').value = userInfo.phone;
   document.getElementById('linkedin').value = userInfo.linkedin;
-  document.getElementById('github').value = userInfo.github;
+  document.getElementById('gitHub').value = userInfo.github;
+  //   document.getElementById('github').value = userInfo.github;
 }
 
 //esta funcion hace que se mantenga seleccionado el color de la paleta elegido.
@@ -28,13 +29,10 @@ function fillFormfromOBject() {
 function fillPaletteObject() {
   if (userInfo.palette === 1) {
     inputGreen.checked = true;
-    changePaletteGreen();
   } else if (userInfo.palette === 2) {
     inputRed.checked = true;
-    changePaletteRed();
   } else {
     inputGrey.checked = true;
-    changePaletteGray();
   }
 }
 
