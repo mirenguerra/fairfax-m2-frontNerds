@@ -33,6 +33,8 @@ const resetSN = () => {
 };
 const resetColor = () => {
   selectEl.checked = true;
+  userName.classList.remove('gray-palette', 'red-palette', 'borderLeftGray', 'borderLeftRed');
+  userName.classList.add('green-palette', 'borderLeftGreen');
 };
 const resetPhotos = () => {
   profileImage.style.backgroundImage = 'url("assets/images/darth-vader.jpg")';
