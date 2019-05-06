@@ -7,7 +7,6 @@ const inputGrey = document.getElementById('palette--blue-gray');
 const inputGreen = document.getElementById('palette--blue-green');
 const contactList = document.querySelector('.card-sm__container');
 
-const palettesElArr = document.querySelectorAll('.option__container');
 const inputElArr = [inputGreen, inputRed, inputGrey];
 const palettesClassNamesArr = ['green-palette', 'red-palette', 'gray-palette'];
 const borderColorClassNameArr = ['borderLeftGreen', 'borderLeftRed', 'borderLeftGray'];
