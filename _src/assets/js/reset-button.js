@@ -35,6 +35,6 @@ function handleButtonResetClick () {
   resetSN();
   resetSelect();
   resetPhotos();
-};
+}
 buttonResetEl.addEventListener('click', handleButtonResetClick);
 
