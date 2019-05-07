@@ -5,7 +5,6 @@ const panels = document.querySelectorAll('.panel');
 const arrows =document.querySelectorAll('.arrow');
 
 const handlerLegendClick = event =>{
-    
     const element = event.currentTarget;
     const currentPanel = element.nextElementSibling;
     const currentArrow = element.querySelector('.arrow');
