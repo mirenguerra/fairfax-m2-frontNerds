@@ -7,6 +7,7 @@ const printDatafromLS = () => {
   const userInfofromLS = localStorage.getItem('userInfo');
   if (userInfofromLS) {
     userInfo = JSON.parse(userInfofromLS);
+    //THE PALETTES AUTOFILL FUNCTIONALITY WORKS IN THE FORM BUT NOT IN THE PREVIEW YET
     fillPaletteObject();
     fillFormfromOBject();
     fillCardfromObject();
@@ -17,12 +18,15 @@ const printDatafromLS = () => {
 };
 
 const fillPaletteObject = () => {
-  if (userInfo.palette === 1) {
+  if (parseInt(userInfo.palette) === 1) {
     inputGreen.checked = true;
-  } else if (userInfo.palette === 2) {
+    // changePaletteGreen();
+  } else if (parseInt(userInfo.palette) === 2) {
     inputRed.checked = true;
+    // changePaletteRed();
   } else {
     inputGrey.checked = true;
+    // changePaletteGray();
   }
 };
 
