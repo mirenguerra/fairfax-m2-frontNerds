@@ -14,7 +14,6 @@ const handlerLegendClick = event =>{
             panels[i].classList.add('hidden');
             arrows[i].classList.add('fa-chevron-down');
             arrows[i].classList.remove('fa-chevron-up');
-
         }
     currentPanel.classList.remove('hidden');
     currentArrow.classList.remove('fa-chevron-down');
@@ -25,10 +24,6 @@ const handlerLegendClick = event =>{
         currentArrow.classList.add('fa-chevron-down');
         currentArrow.classList.remove('fa-chevron-up');
     }
-    
-  
-  
-    
 };
 
 for (const legend of legendTitles){
