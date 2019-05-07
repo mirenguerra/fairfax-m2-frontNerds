@@ -29,8 +29,8 @@ function fillPaletteObject(){
 }
 
 function fillFormfromOBject(){
-    setName.value = userInfo.name;
-    setJob.value = userInfo.job;
+    inputNameEl.value = cardUserNameEl.name;
+    inputJobEl.value = cardUserJobEl.job;
     inputEmailEl.value = userInfo.email;
     inputTel.value = userInfo.phone;
     setGitHub.value = userInfo.github;
